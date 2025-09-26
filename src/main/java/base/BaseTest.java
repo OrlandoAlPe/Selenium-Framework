@@ -2,24 +2,23 @@ package base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 
 public class BaseTest {
-	
-	
-	WebDriver driver;
-	
-	@BeforeTest
-	public void driverSetUp() {
-		WebDriver driver = new ChromeDriver();	
+	protected WebDriver driver;
+
+	@BeforeMethod
+	public void driverSetup() {
+		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 	}
-	
-	@AfterTest
-	private void testCompleted() {
-		driver.quit();
+
+	@AfterMethod
+	public void testTearDown() {
+		if (driver != null) {
+			driver.quit();
+		}
 	}
-	
-	
+
 }
