@@ -1,15 +1,13 @@
 package pages;
 
-import java.time.Duration;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class LoginService {
+import base.BasePage;
+
+public class LoginPage extends BasePage{
 
 	@FindBy(id = "user-name")
 	WebElement usernameTextField;
@@ -19,9 +17,6 @@ public class LoginService {
 
 	@FindBy(id = "login-button")
 	WebElement loginButton;
-
-	private WebDriver driver;
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
 	public enum UserType {
 		STANDARD("standard_user", "secret_sauce"), LOCKED_OUT("locked_out_user", "secret_sauce");
@@ -43,24 +38,24 @@ public class LoginService {
 		}
 	}
 
-	public LoginService(WebDriver driver) {
-		this.driver = driver;
-		PageFactory.initElements(driver, this);
+	public LoginPage(WebDriver driver) {
+		super(driver);
 	}
-
+	
 	private void signInWithAccount(String userType) {
 		wait.until(ExpectedConditions.visibilityOf(usernameTextField));
 		usernameTextField.sendKeys(userType);
 		passwordTextField.sendKeys(UserType.STANDARD.password);
-		loginButton.click();
+		super.clickWebElement(loginButton);
+		System.out.println("Successfully Signed In with the " + userType + " account");
 	}
 
 	public void standardAccountLogin() {
-		signInWithAccount(UserType.STANDARD.username);
+		this.signInWithAccount(UserType.STANDARD.username);
 	}
-	
+
 	public void lockedOutAccountLogin() {
-		signInWithAccount(UserType.LOCKED_OUT.username);
+		this.signInWithAccount(UserType.LOCKED_OUT.username);
 	}
 
 }

@@ -5,7 +5,8 @@
     <classes>
       <class name="tests.SD1_LogIn_Functionality">
         <methods>
-          <include name="driverSetUp"/>
+          <include name="testTearDown"/>
+          <include name="driverSetup"/>
           <include name="test_SD1_LogIn_Functionality"/>
         </methods>
       </class> <!-- tests.SD1_LogIn_Functionality -->

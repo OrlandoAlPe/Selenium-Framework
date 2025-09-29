@@ -14,5 +14,6 @@ public class NavigationPage {
 
 	public void goHomePage() {
 		driver.get("https://www.saucedemo.com/");
+		System.out.println("Navigated to https://www.saucedemo.com/");
 	}
 }

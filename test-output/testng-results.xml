@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-26T13:35:18 CST" name="Default suite" finished-at="2025-09-26T13:35:20 CST" duration-ms="2269">
+  <suite started-at="2025-09-29T14:46:20 CST" name="Default suite" finished-at="2025-09-29T14:46:23 CST" duration-ms="2510">
     <groups>
     </groups>
-    <test started-at="2025-09-26T13:35:18 CST" name="Default test" finished-at="2025-09-26T13:35:20 CST" duration-ms="2269">
+    <test started-at="2025-09-29T14:46:20 CST" name="Default test" finished-at="2025-09-29T14:46:23 CST" duration-ms="2510">
       <class name="tests.SD1_LogIn_Functionality">
-        <test-method is-config="true" signature="driverSetup()[pri:0, instance:tests.SD1_LogIn_Functionality@10683d9d]" started-at="2025-09-26T13:35:18 CST" name="driverSetup" finished-at="2025-09-26T13:35:19 CST" duration-ms="1283" status="PASS">
+        <test-method is-config="true" signature="driverSetup()[pri:0, instance:tests.SD1_LogIn_Functionality@10683d9d]" started-at="2025-09-29T14:46:20 CST" name="driverSetup" finished-at="2025-09-29T14:46:22 CST" duration-ms="1295" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverSetup -->
-        <test-method signature="test_SD1_LogIn_Functionality()[pri:0, instance:tests.SD1_LogIn_Functionality@10683d9d]" started-at="2025-09-26T13:35:19 CST" name="test_SD1_LogIn_Functionality" finished-at="2025-09-26T13:35:20 CST" duration-ms="747" status="PASS">
+        <test-method signature="test_SD1_LogIn_Functionality()[pri:0, instance:tests.SD1_LogIn_Functionality@10683d9d]" started-at="2025-09-29T14:46:22 CST" name="test_SD1_LogIn_Functionality" finished-at="2025-09-29T14:46:23 CST" duration-ms="976" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_SD1_LogIn_Functionality -->
-        <test-method is-config="true" signature="testTearDown()[pri:0, instance:tests.SD1_LogIn_Functionality@10683d9d]" started-at="2025-09-26T13:35:20 CST" name="testTearDown" finished-at="2025-09-26T13:35:20 CST" duration-ms="217" status="PASS">
+        <test-method is-config="true" signature="testTearDown()[pri:0, instance:tests.SD1_LogIn_Functionality@10683d9d]" started-at="2025-09-29T14:46:23 CST" name="testTearDown" finished-at="2025-09-29T14:46:23 CST" duration-ms="216" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTearDown -->
