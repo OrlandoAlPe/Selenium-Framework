@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Sep 29 14:46:20 CST 2025</td>
+<td>Started on:</td><td>Wed Oct 01 13:45:12 CST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>2 seconds (2510 ms)</td>
+<tr><td>Total time:</td><td>2 seconds (2380 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,10 +76,27 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.SD1_LogIn_Functionality.test_SD1_LogIn_Functionality()'><b>test_SD1_LogIn_Functionality</b><br>Test class: tests.SD1_LogIn_Functionality</td>
+<td title='tests.SD2_Invalid_Credentials_Login.test_SD2_Invalid_Credentials_Login()'><b>test_SD2_Invalid_Credentials_Login</b><br>Test class: tests.SD2_Invalid_Credentials_Login<br/>
+<a href="#Output-428245792" onClick='toggleBox("Output-428245792", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-428245792" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-428245792">
+1. Navigate to: https://www.saucedemo.com<br/>
+Navigated to https://www.saucedemo.com/<br/>
+2. Write username: 'invalid_user'<br/>
+3. Write password: 'wrong_password'<br/>
+4. click 'Login' button<br/>
+Element clicked<br/>
+Successfully Signed In with the INVALID account<br/>
+5. Verify 'Epic sadface: Username and password do not match any user in this service' error message<br/>
+Error message displayed correctly<br/>
+6. Verify page stays in LoginPage<br/>
+Current page:  'https://www.saucedemo.com/'<br/>
+</div>
+</td>
 <td></td>
 <td>0</td>
-<td>tests.SD1_LogIn_Functionality@10683d9d</td></tr>
+<td>tests.SD2_Invalid_Credentials_Login@dd05255</td></tr>
 </table><p>
 </body>
 </html>

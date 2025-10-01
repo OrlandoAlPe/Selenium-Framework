@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\USUARIO\AppData\Local\Temp\testng-eclipse-399360489\testng-customsuite.xml</span>
+                    <span>C:\Users\USUARIO\AppData\Local\Temp\testng-eclipse-618445966\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="tests.SD1_LogIn_Functionality" class="method navigator-link" hash-for-method="test_SD1_LogIn_Functionality">test_SD1_LogIn_Functionality</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="tests.SD2_Invalid_Credentials_Login" class="method navigator-link" hash-for-method="test_SD2_Invalid_Credentials_Login">test_SD2_Invalid_Credentials_Login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -121,14 +121,14 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.SD1_LogIn_Functionality</span>
+              <span class="class-name">tests.SD2_Invalid_Credentials_Login</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test_SD1_LogIn_Functionality">
-                  </a> <!-- test_SD1_LogIn_Functionality -->
-                  <span class="method-name">test_SD1_LogIn_Functionality</span>
+                  <a name="test_SD2_Invalid_Credentials_Login">
+                  </a> <!-- test_SD2_Invalid_Credentials_Login -->
+                  <span class="method-name">test_SD2_Invalid_Credentials_Login</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -136,7 +136,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\USUARIO\AppData\Local\Temp\testng-eclipse-399360489\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\USUARIO\AppData\Local\Temp\testng-eclipse-618445966\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -145,7 +145,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.SD1_LogIn_Functionality&quot;/&gt;
+      &lt;class name=&quot;tests.SD2_Invalid_Credentials_Login&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -187,14 +187,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test_SD1_LogIn_Functionality')
-data.setCell(0, 2, 'tests.SD1_LogIn_Functionality')
-data.setCell(0, 3, 976);
+data.setCell(0, 1, 'test_SD2_Invalid_Credentials_Login')
+data.setCell(0, 2, 'tests.SD2_Invalid_Credentials_Login')
+data.setCell(0, 3, 878);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 976 ms</span>
+              <span class="suite-total-time">Total running time: 878 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -205,6 +205,22 @@ return data;
             <span class="header-content">Reporter output for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">test_SD2_Invalid_Credentials_Login</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">1. Navigate to: https://www.saucedemo.com</span>
+                <span class="reporter-method-output">Navigated to https://www.saucedemo.com/</span>
+                <span class="reporter-method-output">2. Write username: 'invalid_user'</span>
+                <span class="reporter-method-output">3. Write password: 'wrong_password'</span>
+                <span class="reporter-method-output">4. click 'Login' button</span>
+                <span class="reporter-method-output">Element clicked</span>
+                <span class="reporter-method-output">Successfully Signed In with the INVALID account</span>
+                <span class="reporter-method-output">5. Verify 'Epic sadface: Username and password do not match any user in this service' error message</span>
+                <span class="reporter-method-output">Error message displayed correctly</span>
+                <span class="reporter-method-output">6. Verify page stays in LoginPage</span>
+                <span class="reporter-method-output">Current page:  'https://www.saucedemo.com/'</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
@@ -220,18 +236,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.SD1_LogIn_Functionality</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.SD2_Invalid_Credentials_Login</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">driverSetup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">test_SD1_LogIn_Functionality</span>
-                <span class="method-start">1296 ms</span>
+                <span class="method-name">test_SD2_Invalid_Credentials_Login</span>
+                <span class="method-start">1270 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">testTearDown</span>
-                <span class="method-start">2273 ms</span>
+                <span class="method-start">2150 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

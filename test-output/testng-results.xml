@@ -1,25 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[1. Navigate to: https://www.saucedemo.com]]>
+    </line>
+    <line>
+      <![CDATA[Navigated to https://www.saucedemo.com/]]>
+    </line>
+    <line>
+      <![CDATA[2. Write username: 'invalid_user']]>
+    </line>
+    <line>
+      <![CDATA[3. Write password: 'wrong_password']]>
+    </line>
+    <line>
+      <![CDATA[4. click 'Login' button]]>
+    </line>
+    <line>
+      <![CDATA[Element clicked]]>
+    </line>
+    <line>
+      <![CDATA[Successfully Signed In with the INVALID account]]>
+    </line>
+    <line>
+      <![CDATA[5. Verify 'Epic sadface: Username and password do not match any user in this service' error message]]>
+    </line>
+    <line>
+      <![CDATA[Error message displayed correctly]]>
+    </line>
+    <line>
+      <![CDATA[6. Verify page stays in LoginPage]]>
+    </line>
+    <line>
+      <![CDATA[Current page:  'https://www.saucedemo.com/']]>
+    </line>
   </reporter-output>
-  <suite started-at="2025-09-29T14:46:20 CST" name="Default suite" finished-at="2025-09-29T14:46:23 CST" duration-ms="2510">
+  <suite started-at="2025-10-01T13:45:12 CST" name="Default suite" finished-at="2025-10-01T13:45:14 CST" duration-ms="2380">
     <groups>
     </groups>
-    <test started-at="2025-09-29T14:46:20 CST" name="Default test" finished-at="2025-09-29T14:46:23 CST" duration-ms="2510">
-      <class name="tests.SD1_LogIn_Functionality">
-        <test-method is-config="true" signature="driverSetup()[pri:0, instance:tests.SD1_LogIn_Functionality@10683d9d]" started-at="2025-09-29T14:46:20 CST" name="driverSetup" finished-at="2025-09-29T14:46:22 CST" duration-ms="1295" status="PASS">
+    <test started-at="2025-10-01T13:45:12 CST" name="Default test" finished-at="2025-10-01T13:45:14 CST" duration-ms="2380">
+      <class name="tests.SD2_Invalid_Credentials_Login">
+        <test-method is-config="true" signature="driverSetup()[pri:0, instance:tests.SD2_Invalid_Credentials_Login@dd05255]" started-at="2025-10-01T13:45:12 CST" name="driverSetup" finished-at="2025-10-01T13:45:13 CST" duration-ms="1270" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverSetup -->
-        <test-method signature="test_SD1_LogIn_Functionality()[pri:0, instance:tests.SD1_LogIn_Functionality@10683d9d]" started-at="2025-09-29T14:46:22 CST" name="test_SD1_LogIn_Functionality" finished-at="2025-09-29T14:46:23 CST" duration-ms="976" status="PASS">
+        <test-method signature="test_SD2_Invalid_Credentials_Login()[pri:0, instance:tests.SD2_Invalid_Credentials_Login@dd05255]" started-at="2025-10-01T13:45:13 CST" name="test_SD2_Invalid_Credentials_Login" finished-at="2025-10-01T13:45:14 CST" duration-ms="878" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[1. Navigate to: https://www.saucedemo.com]]>
+            </line>
+            <line>
+              <![CDATA[Navigated to https://www.saucedemo.com/]]>
+            </line>
+            <line>
+              <![CDATA[2. Write username: 'invalid_user']]>
+            </line>
+            <line>
+              <![CDATA[3. Write password: 'wrong_password']]>
+            </line>
+            <line>
+              <![CDATA[4. click 'Login' button]]>
+            </line>
+            <line>
+              <![CDATA[Element clicked]]>
+            </line>
+            <line>
+              <![CDATA[Successfully Signed In with the INVALID account]]>
+            </line>
+            <line>
+              <![CDATA[5. Verify 'Epic sadface: Username and password do not match any user in this service' error message]]>
+            </line>
+            <line>
+              <![CDATA[Error message displayed correctly]]>
+            </line>
+            <line>
+              <![CDATA[6. Verify page stays in LoginPage]]>
+            </line>
+            <line>
+              <![CDATA[Current page:  'https://www.saucedemo.com/']]>
+            </line>
           </reporter-output>
-        </test-method> <!-- test_SD1_LogIn_Functionality -->
-        <test-method is-config="true" signature="testTearDown()[pri:0, instance:tests.SD1_LogIn_Functionality@10683d9d]" started-at="2025-09-29T14:46:23 CST" name="testTearDown" finished-at="2025-09-29T14:46:23 CST" duration-ms="216" status="PASS">
+        </test-method> <!-- test_SD2_Invalid_Credentials_Login -->
+        <test-method is-config="true" signature="testTearDown()[pri:0, instance:tests.SD2_Invalid_Credentials_Login@dd05255]" started-at="2025-10-01T13:45:14 CST" name="testTearDown" finished-at="2025-10-01T13:45:14 CST" duration-ms="210" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTearDown -->
-      </class> <!-- tests.SD1_LogIn_Functionality -->
+      </class> <!-- tests.SD2_Invalid_Credentials_Login -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

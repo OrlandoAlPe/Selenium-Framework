@@ -1,0 +1,8 @@
+base\BasePage.class
+base\BaseTest.class
+pages\InventoryPage.class
+pages\NavigationPage.class
+pages\LoginPage$UserType.class
+pages\LoginPage.class
+pages\CartPage.class
+tests\SD1_Successful_Login.class
