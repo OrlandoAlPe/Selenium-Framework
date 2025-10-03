@@ -68,7 +68,7 @@ public class LoginPage extends BasePage {
 	}
 	
 	public void validateInvalidLoginErrorMessageDisplayed() {
-		wait.until(ExpectedConditions.visibilityOf(signInErrorMessage));
+		super.validateElementIsDisplayed(signInErrorMessage);
 		assertTrue(signInErrorMessage.getText().contains(loginInvelidCredentialsErrorMessage), "Error message not displayed correctly");
 		Reporter.log("Error message displayed correctly");
 	}

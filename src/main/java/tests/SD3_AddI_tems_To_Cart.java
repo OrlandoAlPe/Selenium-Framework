@@ -28,5 +28,6 @@ public class SD3_AddI_tems_To_Cart extends BaseTest {
 		inventoryPage.validateRemoveSauceLabsBackpackButtonDisplayed();
 		
 		Reporter.log("5. Verify Shoppin cart badge changed to '1'");
+		inventoryPage.validateCartBadgeNumberisCorrect();
 	}
 }

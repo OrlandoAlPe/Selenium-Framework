@@ -1,5 +1,7 @@
 package base;
 
+import static org.testng.Assert.assertTrue;
+
 import java.time.Duration;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -27,8 +29,20 @@ public class BasePage {
 		Reporter.log("Element clicked");
 	}
 	
+	protected void waitForVisibility(WebElement element) {
+		wait.until(ExpectedConditions.visibilityOf(element));
+		Reporter.log("Element visible");
+	}
+	
 	protected void waitForPageToLoad() {
 		wait.until(driver -> ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete"));
+	}
+	
+	protected void validateElementIsDisplayed(WebElement element) {
+		this.waitForVisibility(element);
+		assertTrue(element.isDisplayed());
+		Reporter.log("Element displayed");
+		
 	}
 
 }
