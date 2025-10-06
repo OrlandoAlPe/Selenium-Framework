@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\USUARIO\AppData\Local\Temp\testng-eclipse-1565806173\testng-customsuite.xml</span>
+                    <span>C:\Users\USUARIO\AppData\Local\Temp\testng-eclipse-1715440344\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="tests.SD4_Remove_Product_From_Cart" class="method navigator-link" hash-for-method="test_SD4_Remove_Product_From_Cart">test_SD4_Remove_Product_From_Cart</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="tests.TD6_Complete_Checkout_Process" class="method navigator-link" hash-for-method="test_TD6_Complete_Checkout_Process">test_TD6_Complete_Checkout_Process</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -121,20 +121,41 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">tests.SD4_Remove_Product_From_Cart</span>
+              <span class="class-name">tests.TD6_Complete_Checkout_Process</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test_SD4_Remove_Product_From_Cart">
-                  </a> <!-- test_SD4_Remove_Product_From_Cart -->
-                  <span class="method-name">test_SD4_Remove_Product_From_Cart</span>
-                  <div class="stack-trace">java.lang.AssertionError: Elements in Cart Badge Present expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at pages.InventoryPage.validateCartBadgeNumberisEmpty(InventoryPage.java:132)
-	at tests.SD4_Remove_Product_From_Cart.test_SD4_Remove_Product_From_Cart(SD4_Remove_Product_From_Cart.java:34)
+                  <a name="test_TD6_Complete_Checkout_Process">
+                  </a> <!-- test_TD6_Complete_Checkout_Process -->
+                  <span class="method-name">test_TD6_Complete_Checkout_Process</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=141.0.7390.54)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e797254f5ffad33e2624ee1d97088b30, sendKeysToElement {id=f.A07F9E6AF25119A093238E9E7533D609.d.952A65F4BBAB136BDE14C789A0E6F480.e.24, value=[Ljava.lang.CharSequence;@35d3ab60}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.54, chrome: {chromedriverVersion: 141.0.7390.54 (b95610d5c4a5..., userDataDir: C:\Users\USUARIO\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63573}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63573/devtoo..., se:cdpVersion: 141.0.7390.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e797254f5ffad33e2624ee1d97088b30)] -&gt; id: first-name]
+Session ID: e797254f5ffad33e2624ee1d97088b30
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.sendKeys(Unknown Source)
+	at pages.CheckoutPage.fillCheckoutData(CheckoutPage.java:32)
+	at tests.TD6_Complete_Checkout_Process.test_TD6_Complete_Checkout_Process(TD6_Complete_Checkout_Process.java:38)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -170,7 +191,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\USUARIO\AppData\Local\Temp\testng-eclipse-1565806173\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\USUARIO\AppData\Local\Temp\testng-eclipse-1715440344\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -179,7 +200,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.SD4_Remove_Product_From_Cart&quot;/&gt;
+      &lt;class name=&quot;tests.TD6_Complete_Checkout_Process&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -221,14 +242,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test_SD4_Remove_Product_From_Cart')
-data.setCell(0, 2, 'tests.SD4_Remove_Product_From_Cart')
-data.setCell(0, 3, 6502);
+data.setCell(0, 1, 'test_TD6_Complete_Checkout_Process')
+data.setCell(0, 2, 'tests.TD6_Complete_Checkout_Process')
+data.setCell(0, 3, 966);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 966 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -240,7 +261,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">test_SD4_Remove_Product_From_Cart</span>
+              <span class="reporter-method-name">test_TD6_Complete_Checkout_Process</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">1. Complete a successful login</span>
                 <span class="reporter-method-output">Navigated to https://www.saucedemo.com/</span>
@@ -249,14 +270,11 @@ return data;
                 <span class="reporter-method-output">2. Add saucelabs backpack to cart</span>
                 <span class="reporter-method-output">Element clicked</span>
                 <span class="reporter-method-output">Sauce Labs backpack added to cart.</span>
-                <span class="reporter-method-output">3. Click 'Remove' button</span>
+                <span class="reporter-method-output">3. Click cart button</span>
                 <span class="reporter-method-output">Element clicked</span>
-                <span class="reporter-method-output">Sauce Labs backpack product removed.</span>
-                <span class="reporter-method-output">4. Verify button changed to 'Add to cart'</span>
-                <span class="reporter-method-output">Element visible</span>
-                <span class="reporter-method-output">Element displayed</span>
-                <span class="reporter-method-output">Sauce Labs backpack add to cart button displayed.</span>
-                <span class="reporter-method-output">5. Verify Shoppin cart badge changed to '0'</span>
+                <span class="reporter-method-output">4. Click checkout button</span>
+                <span class="reporter-method-output">Element clicked</span>
+                <span class="reporter-method-output">5. Write the following data :First name: JoeLast name: Doe12345 zip code</span>
                 <span class="reporter-method-output">Element visible</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
@@ -275,7 +293,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.SD4_Remove_Product_From_Cart</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.TD6_Complete_Checkout_Process</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">driverSetup</span>
                 <span class="method-start">0 ms</span>
@@ -283,12 +301,12 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">test_SD4_Remove_Product_From_Cart</span>
-                <span class="method-start">1306 ms</span>
+                <span class="method-name">test_TD6_Complete_Checkout_Process</span>
+                <span class="method-start">1294 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">testTearDown</span>
-                <span class="method-start">7814 ms</span>
+                <span class="method-start">2266 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

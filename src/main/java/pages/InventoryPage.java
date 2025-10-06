@@ -29,12 +29,12 @@ public class InventoryPage extends BasePage {
 	@FindBy(xpath = "//*[@class='shopping_cart_badge']")
 	WebElement shoppingCartBadge;
 
-	private int itemsCounter = 0;
-	
-	//products names
+	int itemsCounter = 0;
+	// products names
 	private final String backPack = "sauce-labs-backpack";
-	
-	//filter categories
+	private final String bikeLight = "sauce-labs-bike-light";
+
+	// filter categories
 	public static final String FILTER_AZ_ORDER = "az";
 	public static final String FILTER_ZA_ORDER = "za";
 	public static final String FILTER_LOW_HIGH_PRICE = "lohi";
@@ -72,9 +72,7 @@ public class InventoryPage extends BasePage {
 	}
 
 	public void validateInventoryPageLoaded() {
-		super.waitForPageToLoad();
-		assertTrue(driver.getCurrentUrl().contains("/inventory.html"), "Page not navigated to /inventory.html");
-		Reporter.log("Inventory Page title");
+		super.validatePageLoaded("/inventory.html");
 	}
 
 	public void verifyInventoryPageTitle() {
@@ -99,13 +97,19 @@ public class InventoryPage extends BasePage {
 
 	public void clickAddToCartSauceLabsBackpackButton() {
 		super.clickWebElement(this.addToCartProductButton(backPack));
-		itemsCounter++;
+
 		Reporter.log("Sauce Labs backpack added to cart.");
+	}
+
+	public void clickAddToCartSauceLabsBickeLightButton() {
+		super.clickWebElement(this.addToCartProductButton(bikeLight));
+		itemsCounter++;
+		Reporter.log("Sauce Labs bicke light added to cart.");
 	}
 
 	public void clickRemoveSauceLabsBackpackButton() {
 		super.clickWebElement(this.removeProductButton(backPack));
-		itemsCounter++;
+		itemsCounter--;
 		Reporter.log("Sauce Labs backpack product removed.");
 	}
 
@@ -125,12 +129,12 @@ public class InventoryPage extends BasePage {
 		assertEquals(itemsCounter, actualNumber);
 		Reporter.log("Expected badge number: " + itemsCounter + " Is the actual badge number: " + actualNumber);
 	}
-	
+
 	public void validateCartBadgeNumberisEmpty() {
 		super.waitForVisibility(shoppingCartButton);
 		List<WebElement> children = shoppingCartButton.findElements(By.xpath("./*"));
-	    assertTrue(children.isEmpty(), "Elements in Cart Badge Present");
-		Reporter.log("No Elements in Cart Badge" );
+		assertTrue(children.isEmpty(), "Elements in Cart Badge Present");
+		Reporter.log("No Elements in Cart Badge");
 	}
 
 }

@@ -8,7 +8,7 @@ import pages.HomePage;
 import pages.InventoryPage;
 import pages.LoginPage;
 
-public class SD3_AddI_tems_To_Cart extends BaseTest {
+public class SD3_Add_tems_To_Cart extends BaseTest {
 	@Test
 	public void test_SD3_AddI_tems_To_Cart() {
 		

@@ -44,5 +44,11 @@ public class BasePage {
 		Reporter.log("Element displayed");
 		
 	}
+	
+	protected void validatePageLoaded(String url) {
+		this.waitForPageToLoad();
+		assertTrue(driver.getCurrentUrl().contains(url), "Page not navigated to " + url);
+		Reporter.log("Page navigated to " + url);
+	}
 
 }

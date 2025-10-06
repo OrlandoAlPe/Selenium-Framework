@@ -1,17 +1,14 @@
 package pages;
 
-import static org.testng.Assert.assertEquals;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
 import org.testng.Reporter;
 
-public class HomePage {
+import base.BasePage;
 
-	private WebDriver driver;
-
+public class HomePage extends BasePage{
+	
 	public HomePage(WebDriver driver) {
-		this.driver = driver;
-		PageFactory.initElements(driver, this);
+		super(driver);
 	}
 
 	public void goHomePage() {
@@ -20,7 +17,6 @@ public class HomePage {
 	}
 
 	public void validatePageNavigatedToHomePage() {
-		assertEquals(driver.getCurrentUrl(), "https://www.saucedemo.com/");
-		Reporter.log("Current page:  'https://www.saucedemo.com/'");
+		super.validatePageLoaded("https://www.saucedemo.com/");
 	}
 }
