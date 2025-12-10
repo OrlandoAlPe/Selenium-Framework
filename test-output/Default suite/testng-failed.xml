@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.TD6_Complete_Checkout_Process">
+      <class name="tests.SD10_Verify_Mandatory_Checkout_Fields">
         <methods>
           <include name="testTearDown"/>
+          <include name="test_SD10_Verify_Mandatory_Checkout_Fields"/>
           <include name="driverSetup"/>
-          <include name="test_TD6_Complete_Checkout_Process"/>
         </methods>
-      </class> <!-- tests.TD6_Complete_Checkout_Process -->
+      </class> <!-- tests.SD10_Verify_Mandatory_Checkout_Fields -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

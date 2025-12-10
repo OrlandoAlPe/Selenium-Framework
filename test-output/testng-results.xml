@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[1. Complete a successful login]]>
@@ -14,7 +14,7 @@
       <![CDATA[Successfully Signed In with the STANDARD account]]>
     </line>
     <line>
-      <![CDATA[2. Add saucelabs backpack to cart]]>
+      <![CDATA[2. Add any product to the cart and proceed to checkout]]>
     </line>
     <line>
       <![CDATA[Element clicked]]>
@@ -23,103 +23,127 @@
       <![CDATA[Sauce Labs backpack added to cart.]]>
     </line>
     <line>
-      <![CDATA[3. Click cart button]]>
+      <![CDATA[Element clicked]]>
     </line>
     <line>
       <![CDATA[Element clicked]]>
     </line>
     <line>
-      <![CDATA[4. Click checkout button]]>
+      <![CDATA[3. Leave First Name field empty]]>
     </line>
     <line>
-      <![CDATA[Element clicked]]>
-    </line>
-    <line>
-      <![CDATA[5. Write the following data :First name: JoeLast name: Doe12345 zip code]]>
+      <![CDATA[4. Fill Last name and ZIP code]]>
     </line>
     <line>
       <![CDATA[Element visible]]>
     </line>
+    <line>
+      <![CDATA[Text Field filled.]]>
+    </line>
+    <line>
+      <![CDATA[Element visible]]>
+    </line>
+    <line>
+      <![CDATA[Text Field filled.]]>
+    </line>
+    <line>
+      <![CDATA[5. Click continue]]>
+    </line>
+    <line>
+      <![CDATA[Element clicked]]>
+    </line>
+    <line>
+      <![CDATA[6. Verify error message]]>
+    </line>
+    <line>
+      <![CDATA[Element visible]]>
+    </line>
+    <line>
+      <![CDATA[Element displayed]]>
+    </line>
+    <line>
+      <![CDATA[Expected message: Error: First Name is required displayed]]>
+    </line>
+    <line>
+      <![CDATA[Element clicked]]>
+    </line>
+    <line>
+      <![CDATA[Element clicked]]>
+    </line>
+    <line>
+      <![CDATA[7. Repeat with zip code and Last name]]>
+    </line>
+    <line>
+      <![CDATA[Checking missing zip code error.]]>
+    </line>
+    <line>
+      <![CDATA[Element visible]]>
+    </line>
+    <line>
+      <![CDATA[Text Field filled.]]>
+    </line>
+    <line>
+      <![CDATA[Element visible]]>
+    </line>
+    <line>
+      <![CDATA[Text Field filled.]]>
+    </line>
+    <line>
+      <![CDATA[Element clicked]]>
+    </line>
+    <line>
+      <![CDATA[Element visible]]>
+    </line>
+    <line>
+      <![CDATA[Element displayed]]>
+    </line>
+    <line>
+      <![CDATA[Expected message: Error: Postal Code is required displayed]]>
+    </line>
+    <line>
+      <![CDATA[Element clicked]]>
+    </line>
+    <line>
+      <![CDATA[Element clicked]]>
+    </line>
+    <line>
+      <![CDATA[Checking missing Last Name error.]]>
+    </line>
+    <line>
+      <![CDATA[Element visible]]>
+    </line>
+    <line>
+      <![CDATA[Text Field filled.]]>
+    </line>
+    <line>
+      <![CDATA[Element visible]]>
+    </line>
+    <line>
+      <![CDATA[Text Field filled.]]>
+    </line>
+    <line>
+      <![CDATA[Element clicked]]>
+    </line>
+    <line>
+      <![CDATA[Element visible]]>
+    </line>
+    <line>
+      <![CDATA[Element displayed]]>
+    </line>
+    <line>
+      <![CDATA[Expected message: Error: Last Name is required displayed]]>
+    </line>
   </reporter-output>
-  <suite started-at="2025-10-06T15:34:04 CST" name="Default suite" finished-at="2025-10-06T15:34:06 CST" duration-ms="2511">
+  <suite started-at="2025-11-19T14:34:26 CST" name="Default suite" finished-at="2025-11-19T14:34:29 CST" duration-ms="3375">
     <groups>
     </groups>
-    <test started-at="2025-10-06T15:34:04 CST" name="Default test" finished-at="2025-10-06T15:34:06 CST" duration-ms="2511">
-      <class name="tests.TD6_Complete_Checkout_Process">
-        <test-method is-config="true" signature="driverSetup()[pri:0, instance:tests.TD6_Complete_Checkout_Process@3aa078fd]" started-at="2025-10-06T15:34:04 CST" name="driverSetup" finished-at="2025-10-06T15:34:05 CST" duration-ms="1293" status="PASS">
+    <test started-at="2025-11-19T14:34:26 CST" name="Default test" finished-at="2025-11-19T14:34:29 CST" duration-ms="3375">
+      <class name="tests.SD10_Verify_Mandatory_Checkout_Fields">
+        <test-method is-config="true" signature="driverSetup()[pri:0, instance:tests.SD10_Verify_Mandatory_Checkout_Fields@dd05255]" started-at="2025-11-19T14:34:26 CST" name="driverSetup" finished-at="2025-11-19T14:34:27 CST" duration-ms="1327" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverSetup -->
-        <test-method signature="test_TD6_Complete_Checkout_Process()[pri:0, instance:tests.TD6_Complete_Checkout_Process@3aa078fd]" started-at="2025-10-06T15:34:05 CST" name="test_TD6_Complete_Checkout_Process" finished-at="2025-10-06T15:34:06 CST" duration-ms="966" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
-            <message>
-              <![CDATA[element not interactable
-  (Session info: chrome=141.0.7390.54)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e797254f5ffad33e2624ee1d97088b30, sendKeysToElement {id=f.A07F9E6AF25119A093238E9E7533D609.d.952A65F4BBAB136BDE14C789A0E6F480.e.24, value=[Ljava.lang.CharSequence;@35d3ab60}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.54, chrome: {chromedriverVersion: 141.0.7390.54 (b95610d5c4a5..., userDataDir: C:\Users\USUARIO\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63573}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63573/devtoo..., se:cdpVersion: 141.0.7390.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (e797254f5ffad33e2624ee1d97088b30)] -> id: first-name]
-Session ID: e797254f5ffad33e2624ee1d97088b30]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=141.0.7390.54)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e797254f5ffad33e2624ee1d97088b30, sendKeysToElement {id=f.A07F9E6AF25119A093238E9E7533D609.d.952A65F4BBAB136BDE14C789A0E6F480.e.24, value=[Ljava.lang.CharSequence;@35d3ab60}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.54, chrome: {chromedriverVersion: 141.0.7390.54 (b95610d5c4a5..., userDataDir: C:\Users\USUARIO\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63573}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63573/devtoo..., se:cdpVersion: 141.0.7390.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (e797254f5ffad33e2624ee1d97088b30)] -> id: first-name]
-Session ID: e797254f5ffad33e2624ee1d97088b30
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy12.sendKeys(Unknown Source)
-at pages.CheckoutPage.fillCheckoutData(CheckoutPage.java:32)
-at tests.TD6_Complete_Checkout_Process.test_TD6_Complete_Checkout_Process(TD6_Complete_Checkout_Process.java:38)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+        <test-method signature="test_SD10_Verify_Mandatory_Checkout_Fields()[pri:0, instance:tests.SD10_Verify_Mandatory_Checkout_Fields@dd05255]" started-at="2025-11-19T14:34:27 CST" name="test_SD10_Verify_Mandatory_Checkout_Fields" finished-at="2025-11-19T14:34:29 CST" duration-ms="1822" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[1. Complete a successful login]]>
@@ -134,7 +158,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               <![CDATA[Successfully Signed In with the STANDARD account]]>
             </line>
             <line>
-              <![CDATA[2. Add saucelabs backpack to cart]]>
+              <![CDATA[2. Add any product to the cart and proceed to checkout]]>
             </line>
             <line>
               <![CDATA[Element clicked]]>
@@ -143,30 +167,123 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               <![CDATA[Sauce Labs backpack added to cart.]]>
             </line>
             <line>
-              <![CDATA[3. Click cart button]]>
+              <![CDATA[Element clicked]]>
             </line>
             <line>
               <![CDATA[Element clicked]]>
             </line>
             <line>
-              <![CDATA[4. Click checkout button]]>
+              <![CDATA[3. Leave First Name field empty]]>
             </line>
             <line>
-              <![CDATA[Element clicked]]>
-            </line>
-            <line>
-              <![CDATA[5. Write the following data :First name: JoeLast name: Doe12345 zip code]]>
+              <![CDATA[4. Fill Last name and ZIP code]]>
             </line>
             <line>
               <![CDATA[Element visible]]>
             </line>
+            <line>
+              <![CDATA[Text Field filled.]]>
+            </line>
+            <line>
+              <![CDATA[Element visible]]>
+            </line>
+            <line>
+              <![CDATA[Text Field filled.]]>
+            </line>
+            <line>
+              <![CDATA[5. Click continue]]>
+            </line>
+            <line>
+              <![CDATA[Element clicked]]>
+            </line>
+            <line>
+              <![CDATA[6. Verify error message]]>
+            </line>
+            <line>
+              <![CDATA[Element visible]]>
+            </line>
+            <line>
+              <![CDATA[Element displayed]]>
+            </line>
+            <line>
+              <![CDATA[Expected message: Error: First Name is required displayed]]>
+            </line>
+            <line>
+              <![CDATA[Element clicked]]>
+            </line>
+            <line>
+              <![CDATA[Element clicked]]>
+            </line>
+            <line>
+              <![CDATA[7. Repeat with zip code and Last name]]>
+            </line>
+            <line>
+              <![CDATA[Checking missing zip code error.]]>
+            </line>
+            <line>
+              <![CDATA[Element visible]]>
+            </line>
+            <line>
+              <![CDATA[Text Field filled.]]>
+            </line>
+            <line>
+              <![CDATA[Element visible]]>
+            </line>
+            <line>
+              <![CDATA[Text Field filled.]]>
+            </line>
+            <line>
+              <![CDATA[Element clicked]]>
+            </line>
+            <line>
+              <![CDATA[Element visible]]>
+            </line>
+            <line>
+              <![CDATA[Element displayed]]>
+            </line>
+            <line>
+              <![CDATA[Expected message: Error: Postal Code is required displayed]]>
+            </line>
+            <line>
+              <![CDATA[Element clicked]]>
+            </line>
+            <line>
+              <![CDATA[Element clicked]]>
+            </line>
+            <line>
+              <![CDATA[Checking missing Last Name error.]]>
+            </line>
+            <line>
+              <![CDATA[Element visible]]>
+            </line>
+            <line>
+              <![CDATA[Text Field filled.]]>
+            </line>
+            <line>
+              <![CDATA[Element visible]]>
+            </line>
+            <line>
+              <![CDATA[Text Field filled.]]>
+            </line>
+            <line>
+              <![CDATA[Element clicked]]>
+            </line>
+            <line>
+              <![CDATA[Element visible]]>
+            </line>
+            <line>
+              <![CDATA[Element displayed]]>
+            </line>
+            <line>
+              <![CDATA[Expected message: Error: Last Name is required displayed]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- test_TD6_Complete_Checkout_Process -->
-        <test-method is-config="true" signature="testTearDown()[pri:0, instance:tests.TD6_Complete_Checkout_Process@3aa078fd]" started-at="2025-10-06T15:34:06 CST" name="testTearDown" finished-at="2025-10-06T15:34:06 CST" duration-ms="224" status="PASS">
+        </test-method> <!-- test_SD10_Verify_Mandatory_Checkout_Fields -->
+        <test-method is-config="true" signature="testTearDown()[pri:0, instance:tests.SD10_Verify_Mandatory_Checkout_Fields@dd05255]" started-at="2025-11-19T14:34:29 CST" name="testTearDown" finished-at="2025-11-19T14:34:29 CST" duration-ms="205" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTearDown -->
-      </class> <!-- tests.TD6_Complete_Checkout_Process -->
+      </class> <!-- tests.SD10_Verify_Mandatory_Checkout_Fields -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

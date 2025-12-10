@@ -15,7 +15,6 @@ public class BaseTest {
 	@BeforeMethod
 	public void driverSetup() {
 		ChromeOptions options = new ChromeOptions();
-
 		Map<String, Object> prefs = new HashMap<>();
 		prefs.put("profile.password_manager_leak_detection", false);
 		prefs.put("credentials_enable_service", false);

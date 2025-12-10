@@ -12,7 +12,7 @@ import pages.HomePage;
 import pages.InventoryPage;
 import pages.LoginPage;
 
-public class TD6_Complete_Checkout_Process extends BaseTest {
+public class SD6_Complete_Checkout_Process extends BaseTest {
 	@Test
 	public void test_TD6_Complete_Checkout_Process() {
 
@@ -38,7 +38,7 @@ public class TD6_Complete_Checkout_Process extends BaseTest {
 		cartPage.clickCheckoutButton();
 
 		Reporter.log("5. Write the following data :" + "First name: Joe" + "Last name: Doe" + "12345 zip code");
-		checkoutPage.fillCheckoutData();
+		checkoutPage.fillAllCheckoutData();
 
 		Reporter.log("6. Click continue button");
 		checkoutPage.clickContinueButton();

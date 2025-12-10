@@ -19,12 +19,12 @@ public class LoginPage extends BasePage {
 
 	@FindBy(id = "login-button")
 	WebElement loginButton;
-	
+
 	@FindBy(xpath = "//h3[@data-test='error']")
 	WebElement signInErrorMessage;
 
 	private String loginInvelidCredentialsErrorMessage = "Username and password do not match any user in this service";
-	
+
 	public enum UserType {
 		STANDARD("standard_user", "secret_sauce"), LOCKED_OUT("locked_out_user", "secret_sauce"),
 		INVALID("invald_user", "wrong_password");
@@ -66,10 +66,11 @@ public class LoginPage extends BasePage {
 	public void invalidAccountLogin() {
 		this.signInWithAccount(UserType.INVALID);
 	}
-	
+
 	public void validateInvalidLoginErrorMessageDisplayed() {
 		super.validateElementIsDisplayed(signInErrorMessage);
-		assertTrue(signInErrorMessage.getText().contains(loginInvelidCredentialsErrorMessage), "Error message not displayed correctly");
+		assertTrue(signInErrorMessage.getText().contains(loginInvelidCredentialsErrorMessage),
+				"Error message not displayed correctly");
 		Reporter.log("Error message displayed correctly");
 	}
 

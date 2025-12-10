@@ -2,7 +2,9 @@ package pages;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
+import static org.testng.Assert.fail;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -29,16 +31,19 @@ public class InventoryPage extends BasePage {
 	@FindBy(xpath = "//*[@class='shopping_cart_badge']")
 	WebElement shoppingCartBadge;
 
+	@FindBy(xpath = "//*[@class='inventory_item_price']")
+	List<WebElement> itemPricesList;
+
 	int itemsCounter = 0;
 	// products names
 	private final String backPack = "sauce-labs-backpack";
 	private final String bikeLight = "sauce-labs-bike-light";
 
 	// filter categories
-	public static final String FILTER_AZ_ORDER = "az";
-	public static final String FILTER_ZA_ORDER = "za";
-	public static final String FILTER_LOW_HIGH_PRICE = "lohi";
-	public static final String FILTER_HIGH_LOW_PRICE = "hilo";
+	private static final String FILTER_AZ_ORDER = "az";
+	private static final String FILTER_ZA_ORDER = "za";
+	private static final String FILTER_LOW_HIGH_PRICE = "lohi";
+	private static final String FILTER_HIGH_LOW_PRICE = "hilo";
 
 	public InventoryPage(WebDriver driver) {
 		super(driver);
@@ -137,4 +142,26 @@ public class InventoryPage extends BasePage {
 		Reporter.log("No Elements in Cart Badge");
 	}
 
+	public void validatePricesAreSortedLowToHigh() {
+		super.waitForVisibility(itemPricesList.get(0));
+		List<Float> prices = new ArrayList<Float>();
+
+		for (WebElement price : itemPricesList) {
+			prices.add(Float.parseFloat(price.getText().replace("$", "")));
+		}
+
+		for (int i = 0; i < prices.size() - 1; i++) {
+			if (prices.get(i) > prices.get(i + 1)) {
+				fail("prices are not sorted low to high.");
+			}
+		}
+		Reporter.log("prices sorted Low to High");
+
+	}
+
+	public void navigateInventoryPage() {
+		driver.get("https://www.saucedemo.com/inventory.html");
+		Reporter.log("Navigated to https://www.saucedemo.com/inventory.html");
+	}
+	
 }
