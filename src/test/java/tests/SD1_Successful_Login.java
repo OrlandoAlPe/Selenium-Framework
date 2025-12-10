@@ -1,7 +1,5 @@
 package tests;
 
-import static org.testng.Assert.assertEquals;
-
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
@@ -21,7 +19,6 @@ public class SD1_Successful_Login extends BaseTest {
 
 		Reporter.log("1. Navigate to: https://www.saucedemo.com.");
 		navigationPage.goHomePage();
-		assertEquals(1, 2);
 		Reporter.log("2. Write username: 'standard_user'.");
 		Reporter.log("3. Write password: 'secret_sauce'.");
 		Reporter.log("4. click 'Login' button.");
