@@ -102,7 +102,7 @@ public class InventoryPage extends BasePage {
 
 	public void clickAddToCartSauceLabsBackpackButton() {
 		super.clickWebElement(this.addToCartProductButton(backPack));
-
+		itemsCounter++;
 		Reporter.log("Sauce Labs backpack added to cart.");
 	}
 

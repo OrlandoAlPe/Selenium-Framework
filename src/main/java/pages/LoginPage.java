@@ -25,7 +25,7 @@ public class LoginPage extends BasePage {
 
 	private String loginInvelidCredentialsErrorMessage = "Username and password do not match any user in this service";
 
-	public enum UserType {
+	private enum UserType {
 		STANDARD("standard_user", "secret_sauce"), LOCKED_OUT("locked_out_user", "secret_sauce"),
 		INVALID("invald_user", "wrong_password");
 
@@ -37,13 +37,6 @@ public class LoginPage extends BasePage {
 			this.password = password;
 		}
 
-		public String getUsername() {
-			return username;
-		}
-
-		public String getPassword() {
-			return password;
-		}
 	}
 
 	public LoginPage(WebDriver driver) {

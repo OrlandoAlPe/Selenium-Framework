@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestSuite]">
+  <test thread-count="5" name="Complete proyect(failed)">
+    <classes>
+      <class name="tests.SD3_Add_tems_To_Cart">
+        <methods>
+          <include name="test_SD3_AddI_tems_To_Cart"/>
+          <include name="testTearDown"/>
+          <include name="driverSetup"/>
+        </methods>
+      </class> <!-- tests.SD3_Add_tems_To_Cart -->
+    </classes>
+  </test> <!-- Complete proyect(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

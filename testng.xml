@@ -1,0 +1,16 @@
+<suite name="TestSuite">
+	<test name="Complete proyect">
+		<classes>
+			<class name="tests.SD1_Successful_Login"/>>
+			<class name="tests.SD2_Invalid_Credentials_Login"/>>
+			<class name="tests.SD3_Add_tems_To_Cart"/>>
+			<class name="tests.SD4_Remove_Product_From_Cart"/>>
+			<class name="tests.SD5_Verify_multiple_items_cart"/>>
+			<class name="tests.SD6_Complete_Checkout_Process"/>>
+			<class name="tests.SD7_Price_Order_Low_To_High"/>>
+			<class name="tests.SD8_Verify_Logout"/>>
+			<class name="tests.SD9_Continue_Purchase_From_Cart"/>>
+			<class name="tests.SD10_Verify_Mandatory_Checkout_Fields"/>>
+		</classes>
+	</test>
+</suite>

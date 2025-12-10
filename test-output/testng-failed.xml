@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.SD10_Verify_Mandatory_Checkout_Fields">
+      <class name="tests.SD3_Add_tems_To_Cart">
         <methods>
+          <include name="test_SD3_AddI_tems_To_Cart"/>
           <include name="testTearDown"/>
-          <include name="test_SD10_Verify_Mandatory_Checkout_Fields"/>
           <include name="driverSetup"/>
         </methods>
-      </class> <!-- tests.SD10_Verify_Mandatory_Checkout_Fields -->
+      </class> <!-- tests.SD3_Add_tems_To_Cart -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
