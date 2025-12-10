@@ -21,4 +21,4 @@ jobs:
         run: mvn -B package --file pom.xml
       
       - name: Run Our TestNG Test Suite
-        run: mvn test -DsuiteXmlFile=testng.xml
+        run: mvn test
