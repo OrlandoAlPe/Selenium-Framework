@@ -20,6 +20,15 @@ public class BaseTest {
 		prefs.put("credentials_enable_service", false);
 		options.setExperimentalOption("prefs", prefs);
 
+		// Detects if we are on CI/CD
+		if (System.getenv("CI") != null) {
+			options.addArguments("--headless");
+			options.addArguments("--no-sandbox");
+			options.addArguments("--disable-dev-shm-usage");
+			options.addArguments("--disable-gpu");
+			options.addArguments("--window-size=1920,1080");
+		}
+
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 	}

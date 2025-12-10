@@ -2,19 +2,19 @@
 <testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[1. Navigate to: https://www.saucedemo.com]]>
+      <![CDATA[1. Navigate to: https://www.saucedemo.com.]]>
     </line>
     <line>
       <![CDATA[Navigated to https://www.saucedemo.com/]]>
     </line>
     <line>
-      <![CDATA[2. Write username: 'standard_user']]>
+      <![CDATA[2. Write username: 'standard_user'.]]>
     </line>
     <line>
-      <![CDATA[3. Write password: 'secret_sauce']]>
+      <![CDATA[3. Write password: 'secret_sauce'.]]>
     </line>
     <line>
-      <![CDATA[4. click 'Login' button]]>
+      <![CDATA[4. click 'Login' button.]]>
     </line>
     <line>
       <![CDATA[Element clicked]]>
@@ -23,13 +23,13 @@
       <![CDATA[Successfully Signed In with the STANDARD account]]>
     </line>
     <line>
-      <![CDATA[5. Verify Url changed to '/inventory.html']]>
+      <![CDATA[5. Verify Url changed to '/inventory.html'.]]>
     </line>
     <line>
       <![CDATA[Page navigated to /inventory.html]]>
     </line>
     <line>
-      <![CDATA[6. Verify page title is 'Products']]>
+      <![CDATA[6. Verify page title is 'Products'.]]>
     </line>
     <line>
       <![CDATA[Inventory Page title dsiplayed correctly]]>
@@ -578,16 +578,16 @@
       <![CDATA[Expected message: Error: Last Name is required displayed]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-12-10T13:27:14 CST" name="TestSuite" finished-at="2025-12-10T13:27:37 CST" duration-ms="22399">
+  <suite started-at="2025-12-10T14:32:22 CST" name="TestSuite" finished-at="2025-12-10T14:32:58 CST" duration-ms="35896">
     <groups>
     </groups>
-    <test started-at="2025-12-10T13:27:14 CST" name="Complete proyect" finished-at="2025-12-10T13:27:37 CST" duration-ms="22399">
+    <test started-at="2025-12-10T14:32:22 CST" name="Complete proyect" finished-at="2025-12-10T14:32:58 CST" duration-ms="35896">
       <class name="tests.SD3_Add_tems_To_Cart">
-        <test-method is-config="true" signature="driverSetup()[pri:0, instance:tests.SD3_Add_tems_To_Cart@fbd1f6]" started-at="2025-12-10T13:27:19 CST" name="driverSetup" finished-at="2025-12-10T13:27:20 CST" duration-ms="889" status="PASS">
+        <test-method is-config="true" signature="driverSetup()[pri:0, instance:tests.SD3_Add_tems_To_Cart@10289886]" started-at="2025-12-10T14:32:28 CST" name="driverSetup" finished-at="2025-12-10T14:32:28 CST" duration-ms="881" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverSetup -->
-        <test-method signature="test_SD3_AddI_tems_To_Cart()[pri:0, instance:tests.SD3_Add_tems_To_Cart@fbd1f6]" started-at="2025-12-10T13:27:20 CST" name="test_SD3_AddI_tems_To_Cart" finished-at="2025-12-10T13:27:21 CST" duration-ms="801" status="PASS">
+        <test-method signature="test_SD3_AddI_tems_To_Cart()[pri:0, instance:tests.SD3_Add_tems_To_Cart@10289886]" started-at="2025-12-10T14:32:28 CST" name="test_SD3_AddI_tems_To_Cart" finished-at="2025-12-10T14:32:41 CST" duration-ms="12748" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[1. Complete a successful login]]>
@@ -636,17 +636,17 @@
             </line>
           </reporter-output>
         </test-method> <!-- test_SD3_AddI_tems_To_Cart -->
-        <test-method is-config="true" signature="testTearDown()[pri:0, instance:tests.SD3_Add_tems_To_Cart@fbd1f6]" started-at="2025-12-10T13:27:21 CST" name="testTearDown" finished-at="2025-12-10T13:27:21 CST" duration-ms="234" status="PASS">
+        <test-method is-config="true" signature="testTearDown()[pri:0, instance:tests.SD3_Add_tems_To_Cart@10289886]" started-at="2025-12-10T14:32:41 CST" name="testTearDown" finished-at="2025-12-10T14:32:41 CST" duration-ms="245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTearDown -->
       </class> <!-- tests.SD3_Add_tems_To_Cart -->
       <class name="tests.SD6_Complete_Checkout_Process">
-        <test-method is-config="true" signature="driverSetup()[pri:0, instance:tests.SD6_Complete_Checkout_Process@7a8c8dcf]" started-at="2025-12-10T13:27:25 CST" name="driverSetup" finished-at="2025-12-10T13:27:26 CST" duration-ms="870" status="PASS">
+        <test-method is-config="true" signature="driverSetup()[pri:0, instance:tests.SD6_Complete_Checkout_Process@4ee203eb]" started-at="2025-12-10T14:32:46 CST" name="driverSetup" finished-at="2025-12-10T14:32:46 CST" duration-ms="881" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverSetup -->
-        <test-method signature="test_TD6_Complete_Checkout_Process()[pri:0, instance:tests.SD6_Complete_Checkout_Process@7a8c8dcf]" started-at="2025-12-10T13:27:26 CST" name="test_TD6_Complete_Checkout_Process" finished-at="2025-12-10T13:27:27 CST" duration-ms="1289" status="PASS">
+        <test-method signature="test_TD6_Complete_Checkout_Process()[pri:0, instance:tests.SD6_Complete_Checkout_Process@4ee203eb]" started-at="2025-12-10T14:32:46 CST" name="test_TD6_Complete_Checkout_Process" finished-at="2025-12-10T14:32:48 CST" duration-ms="1302" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[1. Complete a successful login]]>
@@ -752,17 +752,17 @@
             </line>
           </reporter-output>
         </test-method> <!-- test_TD6_Complete_Checkout_Process -->
-        <test-method is-config="true" signature="testTearDown()[pri:0, instance:tests.SD6_Complete_Checkout_Process@7a8c8dcf]" started-at="2025-12-10T13:27:27 CST" name="testTearDown" finished-at="2025-12-10T13:27:27 CST" duration-ms="203" status="PASS">
+        <test-method is-config="true" signature="testTearDown()[pri:0, instance:tests.SD6_Complete_Checkout_Process@4ee203eb]" started-at="2025-12-10T14:32:48 CST" name="testTearDown" finished-at="2025-12-10T14:32:48 CST" duration-ms="220" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTearDown -->
       </class> <!-- tests.SD6_Complete_Checkout_Process -->
       <class name="tests.SD2_Invalid_Credentials_Login">
-        <test-method is-config="true" signature="driverSetup()[pri:0, instance:tests.SD2_Invalid_Credentials_Login@55fe41ea]" started-at="2025-12-10T13:27:17 CST" name="driverSetup" finished-at="2025-12-10T13:27:18 CST" duration-ms="901" status="PASS">
+        <test-method is-config="true" signature="driverSetup()[pri:0, instance:tests.SD2_Invalid_Credentials_Login@24959ca4]" started-at="2025-12-10T14:32:26 CST" name="driverSetup" finished-at="2025-12-10T14:32:27 CST" duration-ms="858" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverSetup -->
-        <test-method signature="test_SD2_Invalid_Credentials_Login()[pri:0, instance:tests.SD2_Invalid_Credentials_Login@55fe41ea]" started-at="2025-12-10T13:27:18 CST" name="test_SD2_Invalid_Credentials_Login" finished-at="2025-12-10T13:27:19 CST" duration-ms="793" status="PASS">
+        <test-method signature="test_SD2_Invalid_Credentials_Login()[pri:0, instance:tests.SD2_Invalid_Credentials_Login@24959ca4]" started-at="2025-12-10T14:32:27 CST" name="test_SD2_Invalid_Credentials_Login" finished-at="2025-12-10T14:32:27 CST" duration-ms="787" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[1. Navigate to: https://www.saucedemo.com]]>
@@ -805,32 +805,32 @@
             </line>
           </reporter-output>
         </test-method> <!-- test_SD2_Invalid_Credentials_Login -->
-        <test-method is-config="true" signature="testTearDown()[pri:0, instance:tests.SD2_Invalid_Credentials_Login@55fe41ea]" started-at="2025-12-10T13:27:19 CST" name="testTearDown" finished-at="2025-12-10T13:27:19 CST" duration-ms="195" status="PASS">
+        <test-method is-config="true" signature="testTearDown()[pri:0, instance:tests.SD2_Invalid_Credentials_Login@24959ca4]" started-at="2025-12-10T14:32:27 CST" name="testTearDown" finished-at="2025-12-10T14:32:28 CST" duration-ms="223" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTearDown -->
       </class> <!-- tests.SD2_Invalid_Credentials_Login -->
       <class name="tests.SD1_Successful_Login">
-        <test-method is-config="true" signature="driverSetup()[pri:0, instance:tests.SD1_Successful_Login@5542c4ed]" started-at="2025-12-10T13:27:14 CST" name="driverSetup" finished-at="2025-12-10T13:27:16 CST" duration-ms="1277" status="PASS">
+        <test-method is-config="true" signature="driverSetup()[pri:0, instance:tests.SD1_Successful_Login@7d3e8655]" started-at="2025-12-10T14:32:22 CST" name="driverSetup" finished-at="2025-12-10T14:32:24 CST" duration-ms="2783" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverSetup -->
-        <test-method signature="test_SD1_Successful_Login()[pri:0, instance:tests.SD1_Successful_Login@5542c4ed]" started-at="2025-12-10T13:27:16 CST" name="test_SD1_Successful_Login" finished-at="2025-12-10T13:27:17 CST" duration-ms="1251" status="PASS">
+        <test-method signature="test_SD1_Successful_Login()[pri:0, instance:tests.SD1_Successful_Login@7d3e8655]" started-at="2025-12-10T14:32:24 CST" name="test_SD1_Successful_Login" finished-at="2025-12-10T14:32:25 CST" duration-ms="1052" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[1. Navigate to: https://www.saucedemo.com]]>
+              <![CDATA[1. Navigate to: https://www.saucedemo.com.]]>
             </line>
             <line>
               <![CDATA[Navigated to https://www.saucedemo.com/]]>
             </line>
             <line>
-              <![CDATA[2. Write username: 'standard_user']]>
+              <![CDATA[2. Write username: 'standard_user'.]]>
             </line>
             <line>
-              <![CDATA[3. Write password: 'secret_sauce']]>
+              <![CDATA[3. Write password: 'secret_sauce'.]]>
             </line>
             <line>
-              <![CDATA[4. click 'Login' button]]>
+              <![CDATA[4. click 'Login' button.]]>
             </line>
             <line>
               <![CDATA[Element clicked]]>
@@ -839,30 +839,30 @@
               <![CDATA[Successfully Signed In with the STANDARD account]]>
             </line>
             <line>
-              <![CDATA[5. Verify Url changed to '/inventory.html']]>
+              <![CDATA[5. Verify Url changed to '/inventory.html'.]]>
             </line>
             <line>
               <![CDATA[Page navigated to /inventory.html]]>
             </line>
             <line>
-              <![CDATA[6. Verify page title is 'Products']]>
+              <![CDATA[6. Verify page title is 'Products'.]]>
             </line>
             <line>
               <![CDATA[Inventory Page title dsiplayed correctly]]>
             </line>
           </reporter-output>
         </test-method> <!-- test_SD1_Successful_Login -->
-        <test-method is-config="true" signature="testTearDown()[pri:0, instance:tests.SD1_Successful_Login@5542c4ed]" started-at="2025-12-10T13:27:17 CST" name="testTearDown" finished-at="2025-12-10T13:27:17 CST" duration-ms="187" status="PASS">
+        <test-method is-config="true" signature="testTearDown()[pri:0, instance:tests.SD1_Successful_Login@7d3e8655]" started-at="2025-12-10T14:32:25 CST" name="testTearDown" finished-at="2025-12-10T14:32:26 CST" duration-ms="215" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTearDown -->
       </class> <!-- tests.SD1_Successful_Login -->
       <class name="tests.SD7_Price_Order_Low_To_High">
-        <test-method is-config="true" signature="driverSetup()[pri:0, instance:tests.SD7_Price_Order_Low_To_High@24269709]" started-at="2025-12-10T13:27:27 CST" name="driverSetup" finished-at="2025-12-10T13:27:28 CST" duration-ms="866" status="PASS">
+        <test-method is-config="true" signature="driverSetup()[pri:0, instance:tests.SD7_Price_Order_Low_To_High@1a5a4e19]" started-at="2025-12-10T14:32:48 CST" name="driverSetup" finished-at="2025-12-10T14:32:49 CST" duration-ms="940" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverSetup -->
-        <test-method signature="test_SD7_Price_Order_Low_To_High()[pri:0, instance:tests.SD7_Price_Order_Low_To_High@24269709]" started-at="2025-12-10T13:27:28 CST" name="test_SD7_Price_Order_Low_To_High" finished-at="2025-12-10T13:27:29 CST" duration-ms="914" status="PASS">
+        <test-method signature="test_SD7_Price_Order_Low_To_High()[pri:0, instance:tests.SD7_Price_Order_Low_To_High@1a5a4e19]" started-at="2025-12-10T14:32:49 CST" name="test_SD7_Price_Order_Low_To_High" finished-at="2025-12-10T14:32:50 CST" duration-ms="875" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[1. Complete a successful login]]>
@@ -902,17 +902,17 @@
             </line>
           </reporter-output>
         </test-method> <!-- test_SD7_Price_Order_Low_To_High -->
-        <test-method is-config="true" signature="testTearDown()[pri:0, instance:tests.SD7_Price_Order_Low_To_High@24269709]" started-at="2025-12-10T13:27:29 CST" name="testTearDown" finished-at="2025-12-10T13:27:29 CST" duration-ms="187" status="PASS">
+        <test-method is-config="true" signature="testTearDown()[pri:0, instance:tests.SD7_Price_Order_Low_To_High@1a5a4e19]" started-at="2025-12-10T14:32:50 CST" name="testTearDown" finished-at="2025-12-10T14:32:50 CST" duration-ms="221" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTearDown -->
       </class> <!-- tests.SD7_Price_Order_Low_To_High -->
       <class name="tests.SD10_Verify_Mandatory_Checkout_Fields">
-        <test-method is-config="true" signature="driverSetup()[pri:0, instance:tests.SD10_Verify_Mandatory_Checkout_Fields@3a52dba3]" started-at="2025-12-10T13:27:34 CST" name="driverSetup" finished-at="2025-12-10T13:27:35 CST" duration-ms="863" status="PASS">
+        <test-method is-config="true" signature="driverSetup()[pri:0, instance:tests.SD10_Verify_Mandatory_Checkout_Fields@3e78b6a5]" started-at="2025-12-10T14:32:55 CST" name="driverSetup" finished-at="2025-12-10T14:32:56 CST" duration-ms="863" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverSetup -->
-        <test-method signature="test_SD10_Verify_Mandatory_Checkout_Fields()[pri:0, instance:tests.SD10_Verify_Mandatory_Checkout_Fields@3a52dba3]" started-at="2025-12-10T13:27:35 CST" name="test_SD10_Verify_Mandatory_Checkout_Fields" finished-at="2025-12-10T13:27:37 CST" duration-ms="1824" status="PASS">
+        <test-method signature="test_SD10_Verify_Mandatory_Checkout_Fields()[pri:0, instance:tests.SD10_Verify_Mandatory_Checkout_Fields@3e78b6a5]" started-at="2025-12-10T14:32:56 CST" name="test_SD10_Verify_Mandatory_Checkout_Fields" finished-at="2025-12-10T14:32:57 CST" duration-ms="1720" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[1. Complete a successful login]]>
@@ -1048,17 +1048,17 @@
             </line>
           </reporter-output>
         </test-method> <!-- test_SD10_Verify_Mandatory_Checkout_Fields -->
-        <test-method is-config="true" signature="testTearDown()[pri:0, instance:tests.SD10_Verify_Mandatory_Checkout_Fields@3a52dba3]" started-at="2025-12-10T13:27:37 CST" name="testTearDown" finished-at="2025-12-10T13:27:37 CST" duration-ms="218" status="PASS">
+        <test-method is-config="true" signature="testTearDown()[pri:0, instance:tests.SD10_Verify_Mandatory_Checkout_Fields@3e78b6a5]" started-at="2025-12-10T14:32:57 CST" name="testTearDown" finished-at="2025-12-10T14:32:58 CST" duration-ms="204" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTearDown -->
       </class> <!-- tests.SD10_Verify_Mandatory_Checkout_Fields -->
       <class name="tests.SD8_Verify_Logout">
-        <test-method is-config="true" signature="driverSetup()[pri:0, instance:tests.SD8_Verify_Logout@2aceadd4]" started-at="2025-12-10T13:27:29 CST" name="driverSetup" finished-at="2025-12-10T13:27:30 CST" duration-ms="865" status="PASS">
+        <test-method is-config="true" signature="driverSetup()[pri:0, instance:tests.SD8_Verify_Logout@7068e664]" started-at="2025-12-10T14:32:50 CST" name="driverSetup" finished-at="2025-12-10T14:32:51 CST" duration-ms="909" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverSetup -->
-        <test-method signature="test_SD8_Verify_Logout()[pri:0, instance:tests.SD8_Verify_Logout@2aceadd4]" started-at="2025-12-10T13:27:30 CST" name="test_SD8_Verify_Logout" finished-at="2025-12-10T13:27:32 CST" duration-ms="1519" status="PASS">
+        <test-method signature="test_SD8_Verify_Logout()[pri:0, instance:tests.SD8_Verify_Logout@7068e664]" started-at="2025-12-10T14:32:51 CST" name="test_SD8_Verify_Logout" finished-at="2025-12-10T14:32:52 CST" duration-ms="1507" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[1. Complete a successful login]]>
@@ -1113,17 +1113,17 @@
             </line>
           </reporter-output>
         </test-method> <!-- test_SD8_Verify_Logout -->
-        <test-method is-config="true" signature="testTearDown()[pri:0, instance:tests.SD8_Verify_Logout@2aceadd4]" started-at="2025-12-10T13:27:32 CST" name="testTearDown" finished-at="2025-12-10T13:27:32 CST" duration-ms="215" status="PASS">
+        <test-method is-config="true" signature="testTearDown()[pri:0, instance:tests.SD8_Verify_Logout@7068e664]" started-at="2025-12-10T14:32:52 CST" name="testTearDown" finished-at="2025-12-10T14:32:53 CST" duration-ms="202" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTearDown -->
       </class> <!-- tests.SD8_Verify_Logout -->
       <class name="tests.SD4_Remove_Product_From_Cart">
-        <test-method is-config="true" signature="driverSetup()[pri:0, instance:tests.SD4_Remove_Product_From_Cart@1ce24091]" started-at="2025-12-10T13:27:21 CST" name="driverSetup" finished-at="2025-12-10T13:27:22 CST" duration-ms="879" status="PASS">
+        <test-method is-config="true" signature="driverSetup()[pri:0, instance:tests.SD4_Remove_Product_From_Cart@5c86dbc5]" started-at="2025-12-10T14:32:41 CST" name="driverSetup" finished-at="2025-12-10T14:32:42 CST" duration-ms="951" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverSetup -->
-        <test-method signature="test_SD4_Remove_Product_From_Cart()[pri:0, instance:tests.SD4_Remove_Product_From_Cart@1ce24091]" started-at="2025-12-10T13:27:22 CST" name="test_SD4_Remove_Product_From_Cart" finished-at="2025-12-10T13:27:23 CST" duration-ms="856" status="PASS">
+        <test-method signature="test_SD4_Remove_Product_From_Cart()[pri:0, instance:tests.SD4_Remove_Product_From_Cart@5c86dbc5]" started-at="2025-12-10T14:32:42 CST" name="test_SD4_Remove_Product_From_Cart" finished-at="2025-12-10T14:32:43 CST" duration-ms="973" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[1. Complete a successful login]]>
@@ -1178,17 +1178,17 @@
             </line>
           </reporter-output>
         </test-method> <!-- test_SD4_Remove_Product_From_Cart -->
-        <test-method is-config="true" signature="testTearDown()[pri:0, instance:tests.SD4_Remove_Product_From_Cart@1ce24091]" started-at="2025-12-10T13:27:23 CST" name="testTearDown" finished-at="2025-12-10T13:27:23 CST" duration-ms="188" status="PASS">
+        <test-method is-config="true" signature="testTearDown()[pri:0, instance:tests.SD4_Remove_Product_From_Cart@5c86dbc5]" started-at="2025-12-10T14:32:43 CST" name="testTearDown" finished-at="2025-12-10T14:32:44 CST" duration-ms="213" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTearDown -->
       </class> <!-- tests.SD4_Remove_Product_From_Cart -->
       <class name="tests.SD9_Continue_Purchase_From_Cart">
-        <test-method is-config="true" signature="driverSetup()[pri:0, instance:tests.SD9_Continue_Purchase_From_Cart@24aed80c]" started-at="2025-12-10T13:27:32 CST" name="driverSetup" finished-at="2025-12-10T13:27:33 CST" duration-ms="872" status="PASS">
+        <test-method is-config="true" signature="driverSetup()[pri:0, instance:tests.SD9_Continue_Purchase_From_Cart@60db1c0e]" started-at="2025-12-10T14:32:53 CST" name="driverSetup" finished-at="2025-12-10T14:32:54 CST" duration-ms="921" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverSetup -->
-        <test-method signature="test_SD9_Continue_Purchase_From_Cart()[pri:0, instance:tests.SD9_Continue_Purchase_From_Cart@24aed80c]" started-at="2025-12-10T13:27:33 CST" name="test_SD9_Continue_Purchase_From_Cart" finished-at="2025-12-10T13:27:34 CST" duration-ms="1042" status="PASS">
+        <test-method signature="test_SD9_Continue_Purchase_From_Cart()[pri:0, instance:tests.SD9_Continue_Purchase_From_Cart@60db1c0e]" started-at="2025-12-10T14:32:54 CST" name="test_SD9_Continue_Purchase_From_Cart" finished-at="2025-12-10T14:32:55 CST" duration-ms="931" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[1. Complete a successful login]]>
@@ -1231,17 +1231,17 @@
             </line>
           </reporter-output>
         </test-method> <!-- test_SD9_Continue_Purchase_From_Cart -->
-        <test-method is-config="true" signature="testTearDown()[pri:0, instance:tests.SD9_Continue_Purchase_From_Cart@24aed80c]" started-at="2025-12-10T13:27:34 CST" name="testTearDown" finished-at="2025-12-10T13:27:34 CST" duration-ms="204" status="PASS">
+        <test-method is-config="true" signature="testTearDown()[pri:0, instance:tests.SD9_Continue_Purchase_From_Cart@60db1c0e]" started-at="2025-12-10T14:32:55 CST" name="testTearDown" finished-at="2025-12-10T14:32:55 CST" duration-ms="206" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTearDown -->
       </class> <!-- tests.SD9_Continue_Purchase_From_Cart -->
       <class name="tests.SD5_Verify_multiple_items_cart">
-        <test-method is-config="true" signature="driverSetup()[pri:0, instance:tests.SD5_Verify_multiple_items_cart@5dda768f]" started-at="2025-12-10T13:27:23 CST" name="driverSetup" finished-at="2025-12-10T13:27:24 CST" duration-ms="869" status="PASS">
+        <test-method is-config="true" signature="driverSetup()[pri:0, instance:tests.SD5_Verify_multiple_items_cart@461ad730]" started-at="2025-12-10T14:32:44 CST" name="driverSetup" finished-at="2025-12-10T14:32:44 CST" duration-ms="928" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverSetup -->
-        <test-method signature="test_Verify_multiple_items_cart()[pri:0, instance:tests.SD5_Verify_multiple_items_cart@5dda768f]" started-at="2025-12-10T13:27:24 CST" name="test_Verify_multiple_items_cart" finished-at="2025-12-10T13:27:25 CST" duration-ms="875" status="PASS">
+        <test-method signature="test_Verify_multiple_items_cart()[pri:0, instance:tests.SD5_Verify_multiple_items_cart@461ad730]" started-at="2025-12-10T14:32:44 CST" name="test_Verify_multiple_items_cart" finished-at="2025-12-10T14:32:45 CST" duration-ms="886" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[1. Complete a successful login]]>
@@ -1293,7 +1293,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- test_Verify_multiple_items_cart -->
-        <test-method is-config="true" signature="testTearDown()[pri:0, instance:tests.SD5_Verify_multiple_items_cart@5dda768f]" started-at="2025-12-10T13:27:25 CST" name="testTearDown" finished-at="2025-12-10T13:27:25 CST" duration-ms="212" status="PASS">
+        <test-method is-config="true" signature="testTearDown()[pri:0, instance:tests.SD5_Verify_multiple_items_cart@461ad730]" started-at="2025-12-10T14:32:45 CST" name="testTearDown" finished-at="2025-12-10T14:32:46 CST" duration-ms="219" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTearDown -->

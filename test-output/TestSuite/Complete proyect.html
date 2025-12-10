@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>10/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Dec 10 13:27:14 CST 2025</td>
+<td>Started on:</td><td>Wed Dec 10 14:32:22 CST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>22 seconds (22399 ms)</td>
+<tr><td>Total time:</td><td>35 seconds (35896 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,33 +76,35 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.SD1_Successful_Login.test_SD1_Successful_Login()'><b>test_SD1_Successful_Login</b><br>Test class: tests.SD1_Successful_Login<br/>
-<a href="#Output-1517758613" onClick='toggleBox("Output-1517758613", this, "Show output", "Hide output");'>Show output</a>
+<td title='tests.SD2_Invalid_Credentials_Login.test_SD2_Invalid_Credentials_Login()'><b>test_SD2_Invalid_Credentials_Login</b><br>Test class: tests.SD2_Invalid_Credentials_Login<br/>
+<a href="#Output-58421994" onClick='toggleBox("Output-58421994", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1517758613" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1517758613">
+<a href="#Output-58421994" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-58421994">
 1. Navigate to: https://www.saucedemo.com<br/>
 Navigated to https://www.saucedemo.com/<br/>
-2. Write username: 'standard_user'<br/>
-3. Write password: 'secret_sauce'<br/>
+2. Write username: 'invalid_user'<br/>
+3. Write password: 'wrong_password'<br/>
 4. click 'Login' button<br/>
 Element clicked<br/>
-Successfully Signed In with the STANDARD account<br/>
-5. Verify Url changed to '/inventory.html'<br/>
-Page navigated to /inventory.html<br/>
-6. Verify page title is 'Products'<br/>
-Inventory Page title dsiplayed correctly<br/>
+Successfully Signed In with the INVALID account<br/>
+5. Verify 'Epic sadface: Username and password do not match any user in this service' error message<br/>
+Element visible<br/>
+Element displayed<br/>
+Error message displayed correctly<br/>
+6. Verify page stays in LoginPage<br/>
+Page navigated to https://www.saucedemo.com/<br/>
 </div>
 </td>
 <td></td>
-<td>1</td>
-<td>tests.SD1_Successful_Login@5542c4ed</td></tr>
+<td>0</td>
+<td>tests.SD2_Invalid_Credentials_Login@24959ca4</td></tr>
 <tr>
-<td title='tests.SD5_Verify_multiple_items_cart.test_Verify_multiple_items_cart()'><b>test_Verify_multiple_items_cart</b><br>Test class: tests.SD5_Verify_multiple_items_cart<br/>
-<a href="#Output-1906128360" onClick='toggleBox("Output-1906128360", this, "Show output", "Hide output");'>Show output</a>
+<td title='tests.SD4_Remove_Product_From_Cart.test_SD4_Remove_Product_From_Cart()'><b>test_SD4_Remove_Product_From_Cart</b><br>Test class: tests.SD4_Remove_Product_From_Cart<br/>
+<a href="#Output-1118998513" onClick='toggleBox("Output-1118998513", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1906128360" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1906128360">
+<a href="#Output-1118998513" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1118998513">
 1. Complete a successful login<br/>
 Navigated to https://www.saucedemo.com/<br/>
 Element clicked<br/>
@@ -110,26 +112,27 @@ Successfully Signed In with the STANDARD account<br/>
 2. Add saucelabs backpack to cart<br/>
 Element clicked<br/>
 Sauce Labs backpack added to cart.<br/>
-3. Add saucelabs bike light to cart<br/>
+3. Click 'Remove' button<br/>
 Element clicked<br/>
-Sauce Labs bicke light added to cart.<br/>
-4. Click cart button<br/>
-Element clicked<br/>
-5. verify url changes to '/cart.html'<br/>
-Page navigated to /cart.html<br/>
-6. verify there are 2 items in the cart page<br/>
-7. verify both product names and prices are in the cart page<br/>
+Sauce Labs backpack product removed.<br/>
+4. Verify button changed to 'Add to cart'<br/>
+Element visible<br/>
+Element displayed<br/>
+Sauce Labs backpack add to cart button displayed.<br/>
+5. Verify Shoppin cart badge changed to '0'<br/>
+Element visible<br/>
+No Elements in Cart Badge<br/>
 </div>
 </td>
 <td></td>
 <td>0</td>
-<td>tests.SD5_Verify_multiple_items_cart@5dda768f</td></tr>
+<td>tests.SD4_Remove_Product_From_Cart@5c86dbc5</td></tr>
 <tr>
 <td title='tests.SD9_Continue_Purchase_From_Cart.test_SD9_Continue_Purchase_From_Cart()'><b>test_SD9_Continue_Purchase_From_Cart</b><br>Test class: tests.SD9_Continue_Purchase_From_Cart<br/>
-<a href="#Output-1322341191" onClick='toggleBox("Output-1322341191", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1411119464" onClick='toggleBox("Output-1411119464", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1322341191" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1322341191">
+<a href="#Output-1411119464" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1411119464">
 1. Complete a successful login<br/>
 Navigated to https://www.saucedemo.com/<br/>
 Element clicked<br/>
@@ -146,14 +149,14 @@ Inventory Page title dsiplayed correctly<br/>
 </div>
 </td>
 <td></td>
-<td>1</td>
-<td>tests.SD9_Continue_Purchase_From_Cart@24aed80c</td></tr>
+<td>0</td>
+<td>tests.SD9_Continue_Purchase_From_Cart@60db1c0e</td></tr>
 <tr>
 <td title='tests.SD6_Complete_Checkout_Process.test_TD6_Complete_Checkout_Process()'><b>test_TD6_Complete_Checkout_Process</b><br>Test class: tests.SD6_Complete_Checkout_Process<br/>
-<a href="#Output-1014278669" onClick='toggleBox("Output-1014278669", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1837602497" onClick='toggleBox("Output-1837602497", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1014278669" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1014278669">
+<a href="#Output-1837602497" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1837602497">
 1. Complete a successful login<br/>
 Navigated to https://www.saucedemo.com/<br/>
 Element clicked<br/>
@@ -192,39 +195,13 @@ Element displayed<br/>
 </td>
 <td></td>
 <td>1</td>
-<td>tests.SD6_Complete_Checkout_Process@7a8c8dcf</td></tr>
+<td>tests.SD6_Complete_Checkout_Process@4ee203eb</td></tr>
 <tr>
-<td title='tests.SD3_Add_tems_To_Cart.test_SD3_AddI_tems_To_Cart()'><b>test_SD3_AddI_tems_To_Cart</b><br>Test class: tests.SD3_Add_tems_To_Cart<br/>
-<a href="#Output-835426017" onClick='toggleBox("Output-835426017", this, "Show output", "Hide output");'>Show output</a>
+<td title='tests.SD5_Verify_multiple_items_cart.test_Verify_multiple_items_cart()'><b>test_Verify_multiple_items_cart</b><br>Test class: tests.SD5_Verify_multiple_items_cart<br/>
+<a href="#Output-1594857799" onClick='toggleBox("Output-1594857799", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-835426017" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-835426017">
-1. Complete a successful login<br/>
-Navigated to https://www.saucedemo.com/<br/>
-Element clicked<br/>
-Successfully Signed In with the STANDARD account<br/>
-2. Locate 'Sauce Labs backpack' item<br/>
-3. Click 'Add to Cart' button<br/>
-Element clicked<br/>
-Sauce Labs backpack added to cart.<br/>
-4. Verify button changed to 'Remove'<br/>
-Element visible<br/>
-Element displayed<br/>
-Sauce Labs backpack remove button displayed.<br/>
-5. Verify Shoppin cart badge changed to '1'<br/>
-Element visible<br/>
-Expected badge number: 1 Is the actual badge number: 1<br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>tests.SD3_Add_tems_To_Cart@fbd1f6</td></tr>
-<tr>
-<td title='tests.SD4_Remove_Product_From_Cart.test_SD4_Remove_Product_From_Cart()'><b>test_SD4_Remove_Product_From_Cart</b><br>Test class: tests.SD4_Remove_Product_From_Cart<br/>
-<a href="#Output-1280263013" onClick='toggleBox("Output-1280263013", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1280263013" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1280263013">
+<a href="#Output-1594857799" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1594857799">
 1. Complete a successful login<br/>
 Navigated to https://www.saucedemo.com/<br/>
 Element clicked<br/>
@@ -232,102 +209,26 @@ Successfully Signed In with the STANDARD account<br/>
 2. Add saucelabs backpack to cart<br/>
 Element clicked<br/>
 Sauce Labs backpack added to cart.<br/>
-3. Click 'Remove' button<br/>
+3. Add saucelabs bike light to cart<br/>
 Element clicked<br/>
-Sauce Labs backpack product removed.<br/>
-4. Verify button changed to 'Add to cart'<br/>
-Element visible<br/>
-Element displayed<br/>
-Sauce Labs backpack add to cart button displayed.<br/>
-5. Verify Shoppin cart badge changed to '0'<br/>
-Element visible<br/>
-No Elements in Cart Badge<br/>
+Sauce Labs bicke light added to cart.<br/>
+4. Click cart button<br/>
+Element clicked<br/>
+5. verify url changes to '/cart.html'<br/>
+Page navigated to /cart.html<br/>
+6. verify there are 2 items in the cart page<br/>
+7. verify both product names and prices are in the cart page<br/>
 </div>
 </td>
 <td></td>
 <td>0</td>
-<td>tests.SD4_Remove_Product_From_Cart@1ce24091</td></tr>
-<tr>
-<td title='tests.SD8_Verify_Logout.test_SD8_Verify_Logout()'><b>test_SD8_Verify_Logout</b><br>Test class: tests.SD8_Verify_Logout<br/>
-<a href="#Output-1832101486" onClick='toggleBox("Output-1832101486", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1832101486" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1832101486">
-1. Complete a successful login<br/>
-Navigated to https://www.saucedemo.com/<br/>
-Element clicked<br/>
-Successfully Signed In with the STANDARD account<br/>
-2. Click Hamburguer menu<br/>
-Element visible<br/>
-Element clicked<br/>
-3. Click logout<br/>
-Element visible<br/>
-Element clicked<br/>
-4. Verify we are back in Login Page<br/>
-5. Verify URL is the main Page.<br/>
-Page navigated to https://www.saucedemo.com/<br/>
-6. Try to navigate to '/inventory.html'.<br/>
-Navigated to https://www.saucedemo.com/inventory.html<br/>
-7. Verify you are in login Page.<br/>
-Page navigated to https://www.saucedemo.com/<br/>
-</div>
-</td>
-<td></td>
-<td>1</td>
-<td>tests.SD8_Verify_Logout@2aceadd4</td></tr>
-<tr>
-<td title='tests.SD2_Invalid_Credentials_Login.test_SD2_Invalid_Credentials_Login()'><b>test_SD2_Invalid_Credentials_Login</b><br>Test class: tests.SD2_Invalid_Credentials_Login<br/>
-<a href="#Output-510368405" onClick='toggleBox("Output-510368405", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-510368405" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-510368405">
-1. Navigate to: https://www.saucedemo.com<br/>
-Navigated to https://www.saucedemo.com/<br/>
-2. Write username: 'invalid_user'<br/>
-3. Write password: 'wrong_password'<br/>
-4. click 'Login' button<br/>
-Element clicked<br/>
-Successfully Signed In with the INVALID account<br/>
-5. Verify 'Epic sadface: Username and password do not match any user in this service' error message<br/>
-Element visible<br/>
-Element displayed<br/>
-Error message displayed correctly<br/>
-6. Verify page stays in LoginPage<br/>
-Page navigated to https://www.saucedemo.com/<br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>tests.SD2_Invalid_Credentials_Login@55fe41ea</td></tr>
-<tr>
-<td title='tests.SD7_Price_Order_Low_To_High.test_SD7_Price_Order_Low_To_High()'><b>test_SD7_Price_Order_Low_To_High</b><br>Test class: tests.SD7_Price_Order_Low_To_High<br/>
-<a href="#Output-1387293679" onClick='toggleBox("Output-1387293679", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1387293679" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1387293679">
-1. Complete a successful login<br/>
-Navigated to https://www.saucedemo.com/<br/>
-Element clicked<br/>
-Successfully Signed In with the STANDARD account<br/>
-2. Locate sort dropdown<br/>
-3. Sort by price (Low to high)<br/>
-Element visible<br/>
-Elements sorted with the valiue lohi✅<br/>
-4. Obtain all shown prices<br/>
-5. Verify prices are ordered low to high.<br/>
-Element visible<br/>
-prices sorted Low to High<br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>tests.SD7_Price_Order_Low_To_High@24269709</td></tr>
+<td>tests.SD5_Verify_multiple_items_cart@461ad730</td></tr>
 <tr>
 <td title='tests.SD10_Verify_Mandatory_Checkout_Fields.test_SD10_Verify_Mandatory_Checkout_Fields()'><b>test_SD10_Verify_Mandatory_Checkout_Fields</b><br>Test class: tests.SD10_Verify_Mandatory_Checkout_Fields<br/>
-<a href="#Output-605244604" onClick='toggleBox("Output-605244604", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-725901404" onClick='toggleBox("Output-725901404", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-605244604" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-605244604">
+<a href="#Output-725901404" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-725901404">
 1. Complete a successful login<br/>
 Navigated to https://www.saucedemo.com/<br/>
 Element clicked<br/>
@@ -376,7 +277,106 @@ Expected message: Error: Last Name is required displayed<br/>
 </td>
 <td></td>
 <td>1</td>
-<td>tests.SD10_Verify_Mandatory_Checkout_Fields@3a52dba3</td></tr>
+<td>tests.SD10_Verify_Mandatory_Checkout_Fields@3e78b6a5</td></tr>
+<tr>
+<td title='tests.SD3_Add_tems_To_Cart.test_SD3_AddI_tems_To_Cart()'><b>test_SD3_AddI_tems_To_Cart</b><br>Test class: tests.SD3_Add_tems_To_Cart<br/>
+<a href="#Output-979117606" onClick='toggleBox("Output-979117606", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-979117606" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-979117606">
+1. Complete a successful login<br/>
+Navigated to https://www.saucedemo.com/<br/>
+Element clicked<br/>
+Successfully Signed In with the STANDARD account<br/>
+2. Locate 'Sauce Labs backpack' item<br/>
+3. Click 'Add to Cart' button<br/>
+Element clicked<br/>
+Sauce Labs backpack added to cart.<br/>
+4. Verify button changed to 'Remove'<br/>
+Element visible<br/>
+Element displayed<br/>
+Sauce Labs backpack remove button displayed.<br/>
+5. Verify Shoppin cart badge changed to '1'<br/>
+Element visible<br/>
+Expected badge number: 1 Is the actual badge number: 1<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>tests.SD3_Add_tems_To_Cart@10289886</td></tr>
+<tr>
+<td title='tests.SD1_Successful_Login.test_SD1_Successful_Login()'><b>test_SD1_Successful_Login</b><br>Test class: tests.SD1_Successful_Login<br/>
+<a href="#Output-253027775" onClick='toggleBox("Output-253027775", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-253027775" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-253027775">
+1. Navigate to: https://www.saucedemo.com.<br/>
+Navigated to https://www.saucedemo.com/<br/>
+2. Write username: 'standard_user'.<br/>
+3. Write password: 'secret_sauce'.<br/>
+4. click 'Login' button.<br/>
+Element clicked<br/>
+Successfully Signed In with the STANDARD account<br/>
+5. Verify Url changed to '/inventory.html'.<br/>
+Page navigated to /inventory.html<br/>
+6. Verify page title is 'Products'.<br/>
+Inventory Page title dsiplayed correctly<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.SD1_Successful_Login@7d3e8655</td></tr>
+<tr>
+<td title='tests.SD8_Verify_Logout.test_SD8_Verify_Logout()'><b>test_SD8_Verify_Logout</b><br>Test class: tests.SD8_Verify_Logout<br/>
+<a href="#Output-1699826397" onClick='toggleBox("Output-1699826397", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1699826397" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1699826397">
+1. Complete a successful login<br/>
+Navigated to https://www.saucedemo.com/<br/>
+Element clicked<br/>
+Successfully Signed In with the STANDARD account<br/>
+2. Click Hamburguer menu<br/>
+Element visible<br/>
+Element clicked<br/>
+3. Click logout<br/>
+Element visible<br/>
+Element clicked<br/>
+4. Verify we are back in Login Page<br/>
+5. Verify URL is the main Page.<br/>
+Page navigated to https://www.saucedemo.com/<br/>
+6. Try to navigate to '/inventory.html'.<br/>
+Navigated to https://www.saucedemo.com/inventory.html<br/>
+7. Verify you are in login Page.<br/>
+Page navigated to https://www.saucedemo.com/<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.SD8_Verify_Logout@7068e664</td></tr>
+<tr>
+<td title='tests.SD7_Price_Order_Low_To_High.test_SD7_Price_Order_Low_To_High()'><b>test_SD7_Price_Order_Low_To_High</b><br>Test class: tests.SD7_Price_Order_Low_To_High<br/>
+<a href="#Output-247309715" onClick='toggleBox("Output-247309715", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-247309715" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-247309715">
+1. Complete a successful login<br/>
+Navigated to https://www.saucedemo.com/<br/>
+Element clicked<br/>
+Successfully Signed In with the STANDARD account<br/>
+2. Locate sort dropdown<br/>
+3. Sort by price (Low to high)<br/>
+Element visible<br/>
+Elements sorted with the valiue lohi✅<br/>
+4. Obtain all shown prices<br/>
+5. Verify prices are ordered low to high.<br/>
+Element visible<br/>
+prices sorted Low to High<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.SD7_Price_Order_Low_To_High@1a5a4e19</td></tr>
 </table><p>
 </body>
 </html>
