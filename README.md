@@ -1,10 +1,13 @@
 <h1>SauceDemo Test Automation Framework</h1>
 A comprehensive test automation framework for SauceDemo e-commerce application, built using Java, Selenium WebDriver, TestNG, and Maven, following the Page Object Model design pattern.
 
+Features CI/CD pipeline with GitHub Actions for automated test execution on every push
+
 ![Java](https://img.shields.io/badge/Java-21-orange)
 ![Selenium](https://img.shields.io/badge/Selenium-4.x-green)
 ![TestNG](https://img.shields.io/badge/TestNG-7.8-red)
 ![Maven](https://img.shields.io/badge/Maven-4.0+-blue)
+![GitHubAcions](https://img.shields.io/badge/GitHubActions-purple)
 
 <h1>🎯 Project Overview</h1>
 This framework demonstrates end-to-end test automation for an e-commerce workflow, including user authentication, product browsing, shopping cart management, and checkout process. The project showcases best practices in test automation architecture and maintainable code structure.
@@ -18,43 +21,45 @@ This framework demonstrates end-to-end test automation for an e-commerce workflo
 - Maven - Build and dependency management
 - Page Object Model (POM) - Design pattern for maintainability}
 - WebDriverManager - Automatic driver management
+- GitHubActions 
 
 <h1>📁 Project Structure </h1>
 
 ```
 saucedemo-automation/
 
+saucedemo-automation/
 ├── src/
 │   ├── main/
 │   │   └── java/
 │   │       └── base/
 │   │           ├── BasePage.java
-│   │           ├── BaseTest.java
+│   │           └── BaseTest.java
 │   │       └── pages/
 │   │           ├── CartPage.java
 │   │           ├── CheckoutOverviewPage.java
-│   │           ├── CheckoutPage.java
+│   │           ├── CheckoutPege.java
 │   │           ├── ConfirmationPage.java
 │   │           ├── HomePage.java
 │   │           ├── InventoryPage.java
-│   │           ├── LoginPage.java
-│   |        └── tests/
-│               ├── SD1_Success_Login.java
-│               ├── SD2_Invalid_Credentias_Login.java
-│               ├── SD3_Add_Items_To_Cart.java
-│               ├── SD4_Remove_Product_From_Cart.java
-│               ├── SD5_Verify_Multiple_Items_Cart.java
-│               ├── SD6_Complete_Checout_Process.java
-│               ├── SD7_Price_Order_Low_To_High.java
-│               ├── SD8_Verify_Logout.java
-│               ├── SD9_Continue_Purchase_From_Cart.java
-│               └── SD10_Verify_Mandatory_Checkout_Fields.java
-│   |        └── utils/
-│               ├── TestSession.java
+│   │           └── LoginPage.java
+│   └── test/
+│       └── java/
+│           └── tests/
+│               ├──  SD1_Successful_Login.java
+│               ├──  SD2_Invalid_Credentials_Login.java
+│               ├──  SD3_Add_tems_To_Cart.java
+│               ├──  SD4_Remove_Product_From_Cart.java
+│               ├──  SD5_Verify_multiple_items_cart.java
+│               ├──  SD6_Complete_Checkout_Process.java
+│               ├──  SD7_Price_Order_Low_To_High.java
+│               ├──  SD8_Verify_Logout.java
+│               ├──  SD1_Successful_Login.java
+│               ├──  SD9_Continue_Purchase_From_Cart.java
+│               └──  SD10_Verify_Mandatory_Checkout_Fields.java
 ├── testng.xml
 ├── pom.xml
 └── README.md
-stall mi-paquete
 ```
 <h1>🚀 Features </h1>
 
@@ -118,9 +123,7 @@ bash   mvn clean install
 - Each page of the application has a corresponding Page Object class that encapsulates:
 - Web elements (locators)
 - Actions that can be performed on the page
-
-Verification methods
-
+- Verification methods
 
 Example:
 public class LoginPage extends BasePage {
@@ -149,12 +152,6 @@ public class LoginPage extends BasePage {
 
 - Tests run in sequential mode (parallel execution not implemented)
 - Screenshots on failure not implemented
-- No integration with CI/CD pipeline yet
-
-
-<h1>🔮 Future Enhancements</h1>
-
- Add CI/CD integration (GitHub Actions)
 
 <h1>📝 Best Practices Implemented</h1>
 
