@@ -43,6 +43,8 @@ saucedemo-automation/
 │   │           ├── HomePage.java
 │   │           ├── InventoryPage.java
 │   │           └── LoginPage.java
+│   │       └── utils/
+│   │           └── TestSession.java
 │   └── test/
 │       └── java/
 │           └── tests/
