@@ -1,0 +1,187 @@
+Listado de rutas de carpetas
+El número de serie del volumen es FADF-E8EA
+C:.
+¦   .classpath
+¦   .project
+¦   estructura.txt
+¦   pom.xml
+¦   README.md
+¦   testng.xml
+¦   
++---.github
+¦   +---workflows
+¦           mainSetup.yml
+¦           
++---.settings
+¦       org.eclipse.jdt.core.prefs
+¦       org.eclipse.m2e.core.prefs
+¦       
++---src
+¦   +---main
+¦   ¦   +---java
+¦   ¦   ¦   +---base
+¦   ¦   ¦   ¦       BasePage.java
+¦   ¦   ¦   ¦       BaseTest.java
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---pages
+¦   ¦   ¦   ¦       CartPage.java
+¦   ¦   ¦   ¦       CheckoutOverviewPage.java
+¦   ¦   ¦   ¦       CheckoutPage.java
+¦   ¦   ¦   ¦       ConfirmationPage.java
+¦   ¦   ¦   ¦       HomePage.java
+¦   ¦   ¦   ¦       InventoryPage.java
+¦   ¦   ¦   ¦       LoginPage.java
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---utils
+¦   ¦   ¦           TestSession.java
+¦   ¦   ¦           
+¦   ¦   +---resources
+¦   +---test
+¦       +---java
+¦       ¦   +---tests
+¦       ¦           SD10_Verify_Mandatory_Checkout_Fields.java
+¦       ¦           SD1_Successful_Login.java
+¦       ¦           SD2_Invalid_Credentials_Login.java
+¦       ¦           SD3_Add_tems_To_Cart.java
+¦       ¦           SD4_Remove_Product_From_Cart.java
+¦       ¦           SD5_Verify_multiple_items_cart.java
+¦       ¦           SD6_Complete_Checkout_Process.java
+¦       ¦           SD7_Price_Order_Low_To_High.java
+¦       ¦           SD8_Verify_Logout.java
+¦       ¦           SD9_Continue_Purchase_From_Cart.java
+¦       ¦           
+¦       +---resources
++---target
+¦   ¦   selenium-framwork-0.0.1-SNAPSHOT.jar
+¦   ¦   
+¦   +---classes
+¦   ¦   +---base
+¦   ¦   ¦       BasePage.class
+¦   ¦   ¦       BaseTest.class
+¦   ¦   ¦       
+¦   ¦   +---META-INF
+¦   ¦   ¦   ¦   MANIFEST.MF
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---maven
+¦   ¦   ¦       +---com.orlandoAlvarez
+¦   ¦   ¦           +---selenium-framwork
+¦   ¦   ¦                   pom.properties
+¦   ¦   ¦                   pom.xml
+¦   ¦   ¦                   
+¦   ¦   +---pages
+¦   ¦   ¦       CartPage.class
+¦   ¦   ¦       CheckoutOverviewPage.class
+¦   ¦   ¦       CheckoutPage.class
+¦   ¦   ¦       ConfirmationPage.class
+¦   ¦   ¦       HomePage.class
+¦   ¦   ¦       InventoryPage.class
+¦   ¦   ¦       LoginPage$UserType.class
+¦   ¦   ¦       LoginPage.class
+¦   ¦   ¦       
+¦   ¦   +---utils
+¦   ¦           TestSession.class
+¦   ¦           
+¦   +---generated-sources
+¦   ¦   +---annotations
+¦   +---generated-test-sources
+¦   ¦   +---test-annotations
+¦   +---maven-archiver
+¦   ¦       pom.properties
+¦   ¦       
+¦   +---maven-status
+¦   ¦   +---maven-compiler-plugin
+¦   ¦       +---compile
+¦   ¦       ¦   +---default-compile
+¦   ¦       ¦           createdFiles.lst
+¦   ¦       ¦           inputFiles.lst
+¦   ¦       ¦           
+¦   ¦       +---testCompile
+¦   ¦           +---default-testCompile
+¦   ¦                   createdFiles.lst
+¦   ¦                   inputFiles.lst
+¦   ¦                   
+¦   +---test-classes
+¦       +---tests
+¦               SD10_Verify_Mandatory_Checkout_Fields.class
+¦               SD1_Successful_Login.class
+¦               SD2_Invalid_Credentials_Login.class
+¦               SD3_Add_tems_To_Cart.class
+¦               SD4_Remove_Product_From_Cart.class
+¦               SD5_Verify_multiple_items_cart.class
+¦               SD6_Complete_Checkout_Process.class
+¦               SD7_Price_Order_Low_To_High.class
+¦               SD8_Verify_Logout.class
+¦               SD9_Continue_Purchase_From_Cart.class
+¦               
++---test-output
+    ¦   bullet_point.png
+    ¦   collapseall.gif
+    ¦   emailable-report.html
+    ¦   failed.png
+    ¦   index.html
+    ¦   jquery-3.6.0.min.js
+    ¦   navigator-bullet.png
+    ¦   passed.png
+    ¦   skipped.png
+    ¦   testng-failed.xml
+    ¦   testng-reports.css
+    ¦   testng-reports.js
+    ¦   testng-reports1.css
+    ¦   testng-reports2.js
+    ¦   testng-results.xml
+    ¦   testng.css
+    ¦   
+    +---Default suite
+    ¦       Default test.html
+    ¦       Default test.xml
+    ¦       testng-failed.xml
+    ¦       
+    +---junitreports
+    ¦       TEST-tests.SD10_Verify_Mandatory_Checkout_Fields.xml
+    ¦       TEST-tests.SD1_LogIn_Functionality.xml
+    ¦       TEST-tests.SD1_Successful_Login.xml
+    ¦       TEST-tests.SD2_Invalid_Credentials_Login.xml
+    ¦       TEST-tests.SD3_AddI_tems_To_Cart.xml
+    ¦       TEST-tests.SD3_Add_tems_To_Cart.xml
+    ¦       TEST-tests.SD4_Remove_Product_From_Cart.xml
+    ¦       TEST-tests.SD5_Verify_multiple_items_cart.xml
+    ¦       TEST-tests.SD6_Complete_Checkout_Process.xml
+    ¦       TEST-tests.SD7_Price_Order_Low_To_High.xml
+    ¦       TEST-tests.SD8_Verify_Logout.xml
+    ¦       TEST-tests.SD9_Continue_Purchase_From_Cart.xml
+    ¦       TEST-tests.TD6_Complete_Checkout_Process.xml
+    ¦       
+    +---old
+    ¦   ¦   index.html
+    ¦   ¦   
+    ¦   +---Default suite
+    ¦   ¦       classes.html
+    ¦   ¦       Default test.properties
+    ¦   ¦       groups.html
+    ¦   ¦       index.html
+    ¦   ¦       main.html
+    ¦   ¦       methods-alphabetical.html
+    ¦   ¦       methods-not-run.html
+    ¦   ¦       methods.html
+    ¦   ¦       reporter-output.html
+    ¦   ¦       testng.xml.html
+    ¦   ¦       toc.html
+    ¦   ¦       
+    ¦   +---TestSuite
+    ¦           classes.html
+    ¦           Complete proyect.properties
+    ¦           groups.html
+    ¦           index.html
+    ¦           main.html
+    ¦           methods-alphabetical.html
+    ¦           methods-not-run.html
+    ¦           methods.html
+    ¦           reporter-output.html
+    ¦           testng.xml.html
+    ¦           toc.html
+    ¦           
+    +---TestSuite
+            Complete proyect.html
+            Complete proyect.xml
+            testng-failed.xml
+            

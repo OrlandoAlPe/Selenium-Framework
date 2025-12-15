@@ -37,8 +37,8 @@ public class SD5_Verify_multiple_items_cart extends BaseTest {
 		Reporter.log("6. verify there are 2 items in the cart page");
 		cartPage.validateThereAre2ItemsInCartList();
 
-		// TODO
 		Reporter.log("7. verify both product names and prices are in the cart page");
+		cartPage.verifyProductsInSession();
 
 	}
 

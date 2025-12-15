@@ -16,6 +16,7 @@ import org.testng.Reporter;
 import org.testng.asserts.SoftAssert;
 
 import base.BasePage;
+import utils.TestSession;
 
 public class InventoryPage extends BasePage {
 
@@ -38,7 +39,9 @@ public class InventoryPage extends BasePage {
 	// products names
 	private final String backPack = "sauce-labs-backpack";
 	private final String bikeLight = "sauce-labs-bike-light";
-
+	private final String prouctPrefix = "//*[@id='add-to-cart-";
+	private final String prouctPriceSufix = "']/../..//*[@class='inventory_item_price']";
+	private final String prouctNameSufix = "']/../..//*[@class='inventory_item_name ']";
 	// filter categories
 	private static final String FILTER_AZ_ORDER = "az";
 	private static final String FILTER_ZA_ORDER = "za";
@@ -92,6 +95,12 @@ public class InventoryPage extends BasePage {
 
 	private WebElement addToCartProductButton(String product) {
 		WebElement addToCartButton = driver.findElement(By.id("add-to-cart-" + product));
+
+		String namePath = prouctPrefix + product + prouctNameSufix;
+		String pricePath = prouctPrefix + product + prouctPriceSufix;
+		String productName = driver.findElement(By.xpath(namePath)).getText();
+		String productPrice = driver.findElement(By.xpath(pricePath)).getText();
+		TestSession.addProductToSession(productName, productPrice);
 		return addToCartButton;
 	}
 
@@ -163,5 +172,5 @@ public class InventoryPage extends BasePage {
 		driver.get("https://www.saucedemo.com/inventory.html");
 		Reporter.log("Navigated to https://www.saucedemo.com/inventory.html");
 	}
-	
+
 }

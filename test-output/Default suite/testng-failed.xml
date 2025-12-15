@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.SD1_Successful_Login">
+      <class name="tests.SD5_Verify_multiple_items_cart">
         <methods>
+          <include name="test_Verify_multiple_items_cart"/>
           <include name="testTearDown"/>
           <include name="driverSetup"/>
-          <include name="test_SD1_Successful_Login"/>
         </methods>
-      </class> <!-- tests.SD1_Successful_Login -->
+      </class> <!-- tests.SD5_Verify_multiple_items_cart -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

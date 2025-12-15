@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Dec 10 14:49:26 CST 2025</td>
+<td>Started on:</td><td>Mon Dec 15 17:17:53 CST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>2 seconds (2060 ms)</td>
+<tr><td>Total time:</td><td>2 seconds (2901 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,89 +76,41 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.SD1_Successful_Login.test_SD1_Successful_Login()'><b>test_SD1_Successful_Login</b><br>Test class: tests.SD1_Successful_Login<br/>
-<a href="#Output-1893772493" onClick='toggleBox("Output-1893772493", this, "Show output", "Hide output");'>Show output</a>
+<td title='tests.SD5_Verify_multiple_items_cart.test_Verify_multiple_items_cart()'><b>test_Verify_multiple_items_cart</b><br>Test class: tests.SD5_Verify_multiple_items_cart<br/>
+<a href="#Output-1038988454" onClick='toggleBox("Output-1038988454", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1893772493" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1893772493">
-1. Navigate to: https://www.saucedemo.com.<br/>
+<a href="#Output-1038988454" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1038988454">
+1. Complete a successful login<br/>
 Navigated to https://www.saucedemo.com/<br/>
+Element clicked<br/>
+Successfully Signed In with the STANDARD account<br/>
+2. Add saucelabs backpack to cart<br/>
+Product Sauce Labs Backpack added to test session<br/>
+Element clicked<br/>
+Sauce Labs backpack added to cart.<br/>
+3. Add saucelabs bike light to cart<br/>
+Product Sauce Labs Bike Light added to test session<br/>
+Element clicked<br/>
+Sauce Labs bicke light added to cart.<br/>
+4. Click cart button<br/>
+Element clicked<br/>
+5. verify url changes to '/cart.html'<br/>
+Page navigated to /cart.html<br/>
+6. verify there are 2 items in the cart page<br/>
+7. verify both product names and prices are in the cart page<br/>
+Cart page products names and prices initialized.<br/>
+Gathering cart products...<br/>
+Gathering cart products...<br/>
+Items added to cart from inventory page gathered from session.<br/>
+Cart page products names and prices gathered.<br/>
+Amount of items in cart and items in session matched.<br/>
+Products added in inventory page present in cart page.<br/>
 </div>
 </td>
-<td><div><pre>java.lang.AssertionError: expected [2] but found [1]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:1419)
-	at org.testng.Assert.assertEquals(Assert.java:1383)
-	at org.testng.Assert.assertEquals(Assert.java:1429)
-	at tests.SD1_Successful_Login.test_SD1_Successful_Login(SD1_Successful_Login.java:24)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1893772493", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1893772493'><pre>java.lang.AssertionError: expected [2] but found [1]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:1419)
-	at org.testng.Assert.assertEquals(Assert.java:1383)
-	at org.testng.Assert.assertEquals(Assert.java:1429)
-	at tests.SD1_Successful_Login.test_SD1_Successful_Login(SD1_Successful_Login.java:24)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>tests.SD1_Successful_Login@dd05255</td></tr>
+<td></td>
+<td>1</td>
+<td>tests.SD5_Verify_multiple_items_cart@dd05255</td></tr>
 </table><p>
 </body>
 </html>
