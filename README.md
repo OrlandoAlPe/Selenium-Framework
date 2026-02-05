@@ -43,6 +43,8 @@ saucedemo-automation/
 │   │           ├── HomePage.java
 │   │           ├── InventoryPage.java
 │   │           └── LoginPage.java
+│   │       └── utils/
+│   │           └── TestSession.java
 │   └── test/
 │       └── java/
 │           └── tests/
@@ -135,9 +137,9 @@ public class LoginPage extends BasePage {
     
     // Actions
     public void login(String username, String password) {
-        driver.findElement(usernameField).sendKeys(username);
-        driver.findElement(passwordField).sendKeys(password);
-        driver.findElement(loginButton).click();
+        usernameField.sendKeys(username);
+        passwordField.sendKeys(password);
+        loginButton.click();
     }
 }
 <h4>Base Classes:</h4>
