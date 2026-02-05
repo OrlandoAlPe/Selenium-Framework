@@ -51,8 +51,8 @@ public class BasePage {
 		assertTrue(driver.getCurrentUrl().contains(url), "Page not navigated to " + url);
 		Reporter.log("Page navigated to " + url);
 	}
-	
-	protected void fillTextField(WebElement element,String text) {
+
+	protected void fillTextField(WebElement element, String text) {
 		this.waitForPageToLoad();
 		this.waitForVisibility(element);
 		wait.until(ExpectedConditions.elementToBeClickable(element));
