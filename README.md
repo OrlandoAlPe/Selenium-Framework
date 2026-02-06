@@ -19,7 +19,7 @@ This framework demonstrates end-to-end test automation for an e-commerce workflo
 - Selenium WebDriver  - Browser automation
 - TestNG - Testing framework
 - Maven - Build and dependency management
-- Page Object Model (POM) - Design pattern for maintainability}
+- Page Object Model (POM) - Design pattern for maintainability
 - WebDriverManager - Automatic driver management
 - GitHubActions 
 
@@ -128,6 +128,8 @@ bash   mvn clean install
 - Verification methods
 
 Example:
+
+```
 public class LoginPage extends BasePage {
     
     // Locators
@@ -142,6 +144,9 @@ public class LoginPage extends BasePage {
         loginButton.click();
     }
 }
+
+```
+
 <h4>Base Classes:</h4>
 
 - BasePage: Contains common web operations (waits, clicks, text input)
@@ -164,19 +169,6 @@ public class LoginPage extends BasePage {
 - Use of explicit waits over implicit waits
 - Independent test cases (no dependencies between tests)
 - Clear and descriptive assertions
-
-
-🤝 Contributing
-This is a portfolio project, but suggestions and improvements are welcome!
-
-Fork the repository
-Create a feature branch (git checkout -b feature/improvement)
-
-Commit your changes (git commit -m 'Add some improvement')
-
-Push to the branch (git push origin feature/improvement)
-
-Open a Pull Request
 
 <h1>👤 Contact</h1>
 Orlando Álvarez
