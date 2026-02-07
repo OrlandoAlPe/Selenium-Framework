@@ -7,7 +7,7 @@ Features CI/CD pipeline with GitHub Actions for automated test execution on ever
 ![Selenium](https://img.shields.io/badge/Selenium-4.x-green)
 ![TestNG](https://img.shields.io/badge/TestNG-7.8-red)
 ![Maven](https://img.shields.io/badge/Maven-4.0+-blue)
-![GitHubAcions](https://img.shields.io/badge/GitHubActions-purple)
+![GitHubAcions](https://img.shields.io/badge/GitHubActions--purple)
 
 <h1>🎯 Project Overview</h1>
 This framework demonstrates end-to-end test automation for an e-commerce workflow, including user authentication, product browsing, shopping cart management, and checkout process. The project showcases best practices in test automation architecture and maintainable code structure.
@@ -175,7 +175,6 @@ Orlando Álvarez
 
 - 📧 Email: orlandoalpe97@gmail.com
 - 💼 LinkedIn: https://www.linkedin.com/in/orlando-%C3%A1lvarez-peregrina-b27398181/
-- 🐙 GitHub: https://github.com/OrlandoAlPe
 - 📍 Location: Aguascalientes, México
 
 📄 License
